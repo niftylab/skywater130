@@ -77,9 +77,9 @@ target/
 # Jupyter Notebook
 .ipynb_checkpoints
 
-# IPython
-profile_default/
-ipython_config.py
+# # IPython
+# profile_default/
+# ipython_config.py
 
 # pyenv
 .python-version
@@ -175,12 +175,28 @@ calibreview.setup
 
 # laygo files
 adc_sar*
-*logic_templates*
-*logic_generated*
 laygo_working
 *.gds
+*.tcl
+*.yaml
+!laygo2_tech/*.yaml
 serdes_generated*
-laygo2_generators_private/
+
+# verilog_to_laygo
+parsetab.py
+
 # magic/netgen extraction file
+magic_layout/logic_advanced/
+magic_layout/logic_generated/
+magic_layout/scan_generated/
+magic_layout/verilog_to_laygo/
 *.ext
 *.out
+*.spice
+# save .spice file in lvs_example
+!lvs_example/*.spice
+!lvs_example/DFFRAM/sylee21/*.spice
+!lvs_example/RAM8_v2laygo/xschem_netlist/*.spice
+
+#save TCL for config script
+!TCL_scripts/*.tcl

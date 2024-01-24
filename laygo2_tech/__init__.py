@@ -22,8 +22,7 @@
 #
 ########################################################################################################################
 
-"""LAYGO2 setup for skywater130"""
-#from .laygo2_tech_templates import load_templates
+"""LAYGO2 setup for skywater130nm"""
 from .laygo2_tech_templates import load_templates
 from .laygo2_tech_grids import load_grids
 #from .laygo2_tech_templates import generate_gbnd
@@ -31,4 +30,5 @@ from .laygo2_tech_grids import load_grids
 #from .laygo2_tech_templates import generate_pwr_rail
 from .laygo2_tech_templates import generate_pwr_rail
 #from .laygo2_tech_templates import fill_by_instance
-name = 'sky130A'
+name  = 'sky130B'
+scale = 0.5
