@@ -62,3 +62,6 @@ git add TCL_scripts/lvs_setup.tcl
 # # link test specifications
 # ln -s ${TECH_DIR}/specs_test .
 # git add specs_test
+
+# link laygo2_legacy(if not used, then must be deleted/commented)
+ln -s laygo2_legacy/ laygo2
