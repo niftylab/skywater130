@@ -1,0 +1,24 @@
+*drcRulesFile: /autofs/WORK/jdhan/BAG/bag_workspace_tsmcN45/Calibre/drc/CN45_10M.ANT.26a
+*drcRulesFileLastLoad: 1594644831
+*drcRunDir: ./rundir_drc
+*drcLayoutPaths: SPUTNIK_B0.calibre.db
+*drcLayoutPrimary: SPUTNIK_B0
+*drcLayoutLibrary: SPUTNIK_B0_00JD
+*drcLayoutView: layout
+*drcLayoutGetFromViewer: 1
+*drcResultsFile: SPUTNIK_B0.drc.results
+*drcCellName: 0
+*drcDRCMaxResultsAll: 1
+*drcSummaryFile: SPUTNIK_B0.drc.summary
+*drcIncrDRCSlaveHosts: {use {}} {hostName {}} {cpuCount {}} {a32a64 {}} {rsh {}} {maxMem {}} {workingDir {}} {layerDir {}} {mgcLibPath {}} {launchName {}}
+*drcIncrDRCLSFSlaveTbl: {use 1} {totalCpus 1} {minCpus 1} {architecture {{}}} {minMemory {{}}} {resourceOptions {{}}} {submitOptions {{}}}
+*drcIncrDRCGridSlaveTbl: {use 1} {totalCpus 1} {minCpus 1} {architecture {{}}} {minMemory {{}}} {resourceOptions {{}}} {submitOptions {{}}}
+*cmnWarnLayoutOverwrite: 0
+*cmnShowOptions: 1
+*cmnResolution: 5
+*cmnSlaveHosts: {use {}} {hostName {}} {cpuCount {}} {a32a64 {}} {rsh {}} {maxMem {}} {workingDir {}} {layerDir {}} {mgcLibPath {}} {launchName {}}
+*cmnLSFSlaveTbl: {use 1} {totalCpus 1} {minCpus 1} {architecture {{}}} {minMemory {{}}} {resourceOptions {{}}} {submitOptions {{}}}
+*cmnGridSlaveTbl: {use 1} {totalCpus 1} {minCpus 1} {architecture {{}}} {minMemory {{}}} {resourceOptions {{}}} {submitOptions {{}}}
+*cmnFDILayoutLibrary: SPUTNIK_B0_00JD
+*cmnFDILayoutView: layout
+*cmnFDIDEFLayoutPath: SPUTNIK_B0.def

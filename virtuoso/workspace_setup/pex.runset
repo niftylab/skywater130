@@ -1,0 +1,30 @@
+*pexRulesFile: ../Calibre/rcx/calibre.rcx
+*pexRunDir: ./rundir_rcx
+*pexLayoutPaths: logic_test.calibre.db
+*pexLayoutPrimary: logic_test
+*pexLayoutLibrary: SPUTNIK_B0_00JD
+*pexLayoutView: layout
+*pexLayoutGetFromViewer: 1
+*pexSourcePath: logic_test.src.net
+*pexSourcePrimary: logic_test
+*pexSourceLibrary: SPUTNIK_B0_00JD
+*pexSourceView: schematic
+*pexSourceGetFromViewer: 1
+*pexIncludeCmdsType: SVRF
+*pexSVRFCmds: {SOURCE CASE YES} {LAYOUT CASE YES} {} {}
+*pexPowerNames: VDD? VTT?
+*pexGroundNames: VSS?
+*pexReportFile: logic_test.lvs.report
+*pexPexNetlistFile: logic_test.pex.netlist
+*pexPexNetlistFormat: CALIBREVIEW
+*pexPexReportFile: logic_test.pex.report
+*cmnShowOptions: 1
+*cmnVConnectColon: 1
+*cmnUseCBforRVE: 0
+*cmnRunHier: 2
+*cmnSlaveHosts: {use {}} {hostName {}} {cpuCount {}} {a32a64 {}} {rsh {}} {maxMem {}} {workingDir {}} {layerDir {}} {mgcLibPath {}} {launchName {}}
+*cmnLSFSlaveTbl: {use 1} {totalCpus 1} {minCpus 1} {architecture {{}}} {minMemory {{}}} {resourceOptions {{}}} {submitOptions {{}}}
+*cmnGridSlaveTbl: {use 1} {totalCpus 1} {minCpus 1} {architecture {{}}} {minMemory {{}}} {resourceOptions {{}}} {submitOptions {{}}}
+*cmnFDILayoutLibrary: SPUTNIK_B0_00JD
+*cmnFDILayoutView: layout
+*cmnFDIDEFLayoutPath: logic_test.def

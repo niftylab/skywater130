@@ -1,0 +1,1963 @@
+export:
+    target: bag
+    bag:
+        scale: !!float 1e-3
+        reset_library: false
+        tech_library: tsmcN28
+    mpl: &laygo2_tech_mpl
+        colormap:
+            M1:
+            - &id001 [0.0, 0.902, 0.902]
+            - *id001
+            - 0.3
+            M2:
+            - &id002 [0.851, 0.8, 0.0]
+            - *id002
+            - 0.3
+            M3:
+            - &id003 [0.149, 0.549, 0.4196]
+            - *id003
+            - 0.3
+            M4:
+            - &id004 [0.549, 0.549, 0.651]
+            - *id004
+            - 0.3
+            M5:
+            - &id005 [0.7412, 0.8, 0.8]
+            - *id005
+            - 0.3
+            M6:
+            - &id006 [1.0, 0.902, 0.749]
+            - *id006
+            - 0.3
+            M7:
+            - &id007 [0.0, 1.0, 0.0]
+            - *id007
+            - 0.3
+            M8:
+            - &id008 [1.0, 1.0, 0.8]
+            - *id008
+            - 0.3
+            M9:
+            - *id007
+            - *id007
+            - 0.3
+            NP:
+            - &id009 [0.8, 0.8, 0.851]
+            - *id009
+            - 0.3
+            NW:
+            - *id008
+            - *id008
+            - 0.3
+            OD:
+            - &id010 [1.0, 0.0, 0.0]
+            - *id010
+            - 0.3
+            PO:
+            - &id011 [0.0, 0.0, 1.0]
+            - *id011
+            - 0.3
+            PP:
+            - &id012 [1.0, 0.0, 1.0]
+            - *id012
+            - 0.3
+            VIA1:
+            - &id013 [1.0, 1.0, 0.0]
+            - *id013
+            - 0.3
+            VIA2:
+            - *id013
+            - *id013
+            - 0.3
+            VIA3:
+            - &id014 [0.6, 0.0, 0.902]
+            - *id014
+            - 0.3
+            VIA4:
+            - &id015 [1.0, 1.0, 1.0]
+            - *id015
+            - 0.3
+            VIA5:
+            - *id008
+            - *id008
+            - 0.3
+            VIA6:
+            - *id002
+            - *id002
+            - 0.3
+            VIA7:
+            - *id006
+            - *id006
+            - 0.3
+            VIA8:
+            - *id002
+            - *id002
+            - 0.3
+            __instance__: [black, none, 1]
+            __instance_pin__: [gray, none, 1]
+            prBoundary:
+            - *id014
+            - *id014
+            - 0.3
+        order: [__instance__, __instance_pin__, prBoundary, NW, PP, NP, OD, PO, M1, VIA1,
+            M2, VIA2, M3, VIA3, M4, VIA4, M5, VIA5, M6, VIA6, M7, VIA7, M8, VIA8, M9]
+grids:
+    tsmcN28_microtemplates_dense:
+        placement_basic:
+            horizontal:
+                elements: [0]
+                scope: [0, 50]
+            type: placement
+            vertical:
+                elements: [0]
+                scope: [0, 130]
+        routing_12_basic:
+            horizontal:
+                elements: [0]
+                extension: [25]
+                extension0: [100]
+                layer:
+                - [M2, drawing]
+                pin_layer:
+                - [M2, pin]
+                scope: [0, 100]
+                width: [50]
+                ycolor: [not MPT]
+            primary_grid: horizontal
+            type: routing
+            vertical:
+                elements: [0]
+                extension: [25]
+                extension0: [100]
+                layer:
+                - [M1, drawing]
+                pin_layer:
+                - [M1, pin]
+                scope: [0, 130]
+                width: [50]
+                xcolor: [not MPT]
+            via:
+                map:
+                - [via_M1_M2_0]
+        routing_12_cmos:
+            horizontal:
+                elements: [0, 200, 300, 485, 600, 715, 900, 1000]
+                extension: [75, 25, 25, 25, 25, 25, 25, 25]
+                extension0: [300, 140, 140, 140, 140, 140, 140, 140]
+                layer:
+                - [M2, drawing]
+                - [M2, drawing]
+                - [M2, drawing]
+                - [M2, drawing]
+                - [M2, drawing]
+                - [M2, drawing]
+                - [M2, drawing]
+                - [M2, drawing]
+                pin_layer:
+                - [M2, pin]
+                - [M2, pin]
+                - [M2, pin]
+                - [M2, pin]
+                - [M2, pin]
+                - [M2, pin]
+                - [M2, pin]
+                - [M2, pin]
+                scope: [0, 1200]
+                width: [150, 50, 50, 50, 50, 50, 50, 50]
+                ycolor: [not MPT, not MPT, not MPT, not MPT, not MPT, not MPT, not
+                        MPT, not MPT]
+            primary_grid: horizontal
+            type: routing
+            vertical:
+                elements: [0]
+                extension: [25]
+                extension0: [100]
+                layer:
+                - [M1, drawing]
+                pin_layer:
+                - [M1, pin]
+                scope: [0, 130]
+                width: [50]
+                xcolor: [not MPT]
+            via:
+                map:
+                - [via_M1_M2_2, via_M1_M2_0, via_M1_M2_0, via_M1_M2_0, via_M1_M2_0,
+                    via_M1_M2_0, via_M1_M2_0, via_M1_M2_0]
+        routing_12_cmos_flipped:
+            horizontal:
+                elements: [0, 115, 300, 400, 600, 800, 900, 1085]
+                extension: [25, 25, 25, 25, 75, 25, 25, 25]
+                extension0: [140, 140, 140, 140, 300, 140, 140, 140]
+                layer:
+                - [M2, drawing]
+                - [M2, drawing]
+                - [M2, drawing]
+                - [M2, drawing]
+                - [M2, drawing]
+                - [M2, drawing]
+                - [M2, drawing]
+                - [M2, drawing]
+                pin_layer:
+                - [M2, pin]
+                - [M2, pin]
+                - [M2, pin]
+                - [M2, pin]
+                - [M2, pin]
+                - [M2, pin]
+                - [M2, pin]
+                - [M2, pin]
+                scope: [0, 1200]
+                width: [50, 50, 50, 50, 150, 50, 50, 50]
+                ycolor: [not MPT, not MPT, not MPT, not MPT, not MPT, not MPT, not
+                        MPT, not MPT]
+            primary_grid: horizontal
+            type: routing
+            vertical:
+                elements: [0]
+                extension: [25]
+                extension0: [100]
+                layer:
+                - [M1, drawing]
+                pin_layer:
+                - [M1, pin]
+                scope: [0, 130]
+                width: [50]
+                xcolor: [not MPT]
+            via:
+                map:
+                - [via_M1_M2_0, via_M1_M2_0, via_M1_M2_0, via_M1_M2_0, via_M1_M2_2,
+                    via_M1_M2_0, via_M1_M2_0, via_M1_M2_0]
+        routing_12_mos:
+            horizontal:
+                elements: [0, 200, 300, 485]
+                extension: [75, 25, 25, 25]
+                extension0: [300, 140, 140, 140]
+                layer:
+                - [M2, drawing]
+                - [M2, drawing]
+                - [M2, drawing]
+                - [M2, drawing]
+                pin_layer:
+                - [M2, pin]
+                - [M2, pin]
+                - [M2, pin]
+                - [M2, pin]
+                scope: [0, 600]
+                width: [150, 50, 50, 50]
+                ycolor: [not MPT, not MPT, not MPT, not MPT]
+            primary_grid: horizontal
+            type: routing
+            vertical:
+                elements: [0]
+                extension: [25]
+                extension0: [100]
+                layer:
+                - [M1, drawing]
+                pin_layer:
+                - [M1, pin]
+                scope: [0, 130]
+                width: [50]
+                xcolor: [not MPT]
+            via:
+                map:
+                - [via_M1_M2_2, via_M1_M2_0, via_M1_M2_0, via_M1_M2_0]
+        routing_12_thick:
+            horizontal:
+                elements: [150, 450]
+                extension: [130, 130]
+                extension0: [260, 260]
+                layer:
+                - [M2, drawing]
+                - [M2, drawing]
+                pin_layer:
+                - [M2, pin]
+                - [M2, pin]
+                scope: [0, 600]
+                width: [150, 150]
+                ycolor: [not MPT, not MPT]
+            primary_grid: horizontal
+            type: routing
+            vertical:
+                elements: [0]
+                extension: [25]
+                extension0: [100]
+                layer:
+                - [M1, drawing]
+                pin_layer:
+                - [M1, pin]
+                scope: [0, 130]
+                width: [50]
+                xcolor: [not MPT]
+            via:
+                map:
+                - [via_M1_M2_2, via_M1_M2_2]
+        routing_23_basic:
+            horizontal:
+                elements: [0]
+                extension: [25]
+                extension0: [140]
+                layer:
+                - [M2, drawing]
+                pin_layer:
+                - [M2, pin]
+                scope: [0, 100]
+                width: [50]
+                ycolor: [not MPT]
+            primary_grid: horizontal
+            type: routing
+            vertical:
+                elements: [0]
+                extension: [30]
+                extension0: [120]
+                layer:
+                - [M3, drawing]
+                pin_layer:
+                - [M3, pin]
+                scope: [0, 130]
+                width: [60]
+                xcolor: [not MPT]
+            via:
+                map:
+                - [via_M2_M3_0]
+        routing_23_basic_thick:
+            horizontal:
+                elements: [0]
+                extension: [25]
+                extension0: [140]
+                layer:
+                - [M2, drawing]
+                pin_layer:
+                - [M2, pin]
+                scope: [0, 100]
+                width: [50]
+                ycolor: [not MPT]
+            primary_grid: horizontal
+            type: routing
+            vertical:
+                elements: [0]
+                extension: [75]
+                extension0: [300]
+                layer:
+                - [M3, drawing]
+                pin_layer:
+                - [M3, pin]
+                scope: [0, 260]
+                width: [150]
+                xcolor: [not MPT]
+            via:
+                map:
+                - [via_M2_M3_3]
+        routing_23_cmos:
+            horizontal:
+                elements: [0, 200, 300, 485, 600, 715, 900, 1000]
+                extension: [75, 25, 25, 25, 25, 25, 25, 25]
+                extension0: [300, 140, 140, 140, 140, 140, 140, 140]
+                layer:
+                - [M2, drawing]
+                - [M2, drawing]
+                - [M2, drawing]
+                - [M2, drawing]
+                - [M2, drawing]
+                - [M2, drawing]
+                - [M2, drawing]
+                - [M2, drawing]
+                pin_layer:
+                - [M2, pin]
+                - [M2, pin]
+                - [M2, pin]
+                - [M2, pin]
+                - [M2, pin]
+                - [M2, pin]
+                - [M2, pin]
+                - [M2, pin]
+                scope: [0, 1200]
+                width: [150, 50, 50, 50, 50, 50, 50, 50]
+                ycolor: [not MPT, not MPT, not MPT, not MPT, not MPT, not MPT, not
+                        MPT, not MPT]
+            primary_grid: horizontal
+            type: routing
+            vertical:
+                elements: [0]
+                extension: [30]
+                extension0: [120]
+                layer:
+                - [M3, drawing]
+                pin_layer:
+                - [M3, pin]
+                scope: [0, 130]
+                width: [60]
+                xcolor: [not MPT]
+            via:
+                map:
+                - [via_M2_M3_2, via_M2_M3_0, via_M2_M3_0, via_M2_M3_0, via_M2_M3_0,
+                    via_M2_M3_0, via_M2_M3_0, via_M2_M3_0]
+        routing_23_cmos_flipped:
+            horizontal:
+                elements: [0, 115, 300, 400, 600, 800, 900, 1085]
+                extension: [25, 25, 25, 25, 75, 25, 25, 25]
+                extension0: [140, 140, 140, 140, 300, 140, 140, 140]
+                layer:
+                - [M2, drawing]
+                - [M2, drawing]
+                - [M2, drawing]
+                - [M2, drawing]
+                - [M2, drawing]
+                - [M2, drawing]
+                - [M2, drawing]
+                - [M2, drawing]
+                pin_layer:
+                - [M2, pin]
+                - [M2, pin]
+                - [M2, pin]
+                - [M2, pin]
+                - [M2, pin]
+                - [M2, pin]
+                - [M2, pin]
+                - [M2, pin]
+                scope: [0, 1200]
+                width: [50, 50, 50, 50, 150, 50, 50, 50]
+                ycolor: [not MPT, not MPT, not MPT, not MPT, not MPT, not MPT, not
+                        MPT, not MPT]
+            primary_grid: horizontal
+            type: routing
+            vertical:
+                elements: [0]
+                extension: [30]
+                extension0: [120]
+                layer:
+                - [M3, drawing]
+                pin_layer:
+                - [M3, pin]
+                scope: [0, 130]
+                width: [60]
+                xcolor: [not MPT]
+            via:
+                map:
+                - [via_M2_M3_0, via_M2_M3_0, via_M2_M3_0, via_M2_M3_0, via_M2_M3_2,
+                    via_M2_M3_0, via_M2_M3_0, via_M2_M3_0]
+        routing_23_cmos_thick:
+            horizontal:
+                elements: [0, 200, 300, 485, 600, 715, 900, 1000]
+                extension: [205, 155, 155, 155, 155, 155, 155, 155]
+                extension0: [300, 140, 140, 140, 140, 140, 140, 140]
+                layer:
+                - [M2, drawing]
+                - [M2, drawing]
+                - [M2, drawing]
+                - [M2, drawing]
+                - [M2, drawing]
+                - [M2, drawing]
+                - [M2, drawing]
+                - [M2, drawing]
+                pin_layer:
+                - [M2, pin]
+                - [M2, pin]
+                - [M2, pin]
+                - [M2, pin]
+                - [M2, pin]
+                - [M2, pin]
+                - [M2, pin]
+                - [M2, pin]
+                scope: [0, 1200]
+                width: [150, 50, 50, 50, 50, 50, 50, 50]
+                ycolor: [not MPT, not MPT, not MPT, not MPT, not MPT, not MPT, not
+                        MPT, not MPT]
+            primary_grid: horizontal
+            type: routing
+            vertical:
+                elements: [0]
+                extension: [75]
+                extension0: [300]
+                layer:
+                - [M3, drawing]
+                pin_layer:
+                - [M3, pin]
+                scope: [0, 130]
+                width: [150]
+                xcolor: [not MPT]
+            via:
+                map:
+                - [via_M2_M3_3, via_M2_M3_3, via_M2_M3_3, via_M2_M3_3, via_M2_M3_3,
+                    via_M2_M3_3, via_M2_M3_3, via_M2_M3_3]
+        routing_23_mos:
+            horizontal:
+                elements: [0, 200, 300, 485]
+                extension: [75, 25, 25, 25]
+                extension0: [300, 140, 140, 140]
+                layer:
+                - [M2, drawing]
+                - [M2, drawing]
+                - [M2, drawing]
+                - [M2, drawing]
+                pin_layer:
+                - [M2, pin]
+                - [M2, pin]
+                - [M2, pin]
+                - [M2, pin]
+                scope: [0, 600]
+                width: [150, 50, 50, 50]
+                ycolor: [not MPT, not MPT, not MPT, not MPT]
+            primary_grid: horizontal
+            type: routing
+            vertical:
+                elements: [0]
+                extension: [30]
+                extension0: [120]
+                layer:
+                - [M3, drawing]
+                pin_layer:
+                - [M3, pin]
+                scope: [0, 130]
+                width: [60]
+                xcolor: [not MPT]
+            via:
+                map:
+                - [via_M2_M3_2, via_M2_M3_0, via_M2_M3_0, via_M2_M3_0]
+        routing_23_thick:
+            horizontal:
+                elements: [0]
+                extension: [75]
+                extension0: [300]
+                layer:
+                - [M2, drawing]
+                pin_layer:
+                - [M2, pin]
+                scope: [0, 600]
+                width: [150]
+                ycolor: [not MPT]
+            primary_grid: horizontal
+            type: routing
+            vertical:
+                elements: [0]
+                extension: [75]
+                extension0: [300]
+                layer:
+                - [M3, drawing]
+                pin_layer:
+                - [M3, pin]
+                scope: [0, 260]
+                width: [150]
+                xcolor: [not MPT]
+            via:
+                map:
+                - [via_M2_M3_2]
+        routing_23_thick_basic:
+            horizontal:
+                elements: [175, 425]
+                extension: [75, 75]
+                extension0: [300, 300]
+                layer:
+                - [M2, drawing]
+                - [M2, drawing]
+                pin_layer:
+                - [M2, pin]
+                - [M2, pin]
+                scope: [0, 600]
+                width: [150, 150]
+                ycolor: [not MPT, not MPT]
+            primary_grid: horizontal
+            type: routing
+            vertical:
+                elements: [0]
+                extension: [30]
+                extension0: [120]
+                layer:
+                - [M3, drawing]
+                pin_layer:
+                - [M3, pin]
+                scope: [0, 260]
+                width: [60]
+                xcolor: [not MPT]
+            via:
+                map:
+                - [via_M2_M3_2, via_M2_M3_2]
+        routing_34_basic:
+            horizontal:
+                elements: [0]
+                extension: [25]
+                extension0: [100]
+                layer:
+                - [M4, drawing]
+                pin_layer:
+                - [M4, pin]
+                scope: [0, 100]
+                width: [50]
+                ycolor: [not MPT]
+            primary_grid: horizontal
+            type: routing
+            vertical:
+                elements: [0]
+                extension: [30]
+                extension0: [120]
+                layer:
+                - [M3, drawing]
+                pin_layer:
+                - [M3, pin]
+                scope: [0, 130]
+                width: [60]
+                xcolor: [not MPT]
+            via:
+                map:
+                - [via_M3_M4_0]
+        routing_34_basic_thick:
+            horizontal:
+                elements: [0]
+                extension: [75]
+                extension0: [300]
+                layer:
+                - [M4, drawing]
+                pin_layer:
+                - [M4, pin]
+                scope: [0, 300]
+                width: [150]
+                ycolor: [not MPT]
+            primary_grid: horizontal
+            type: routing
+            vertical:
+                elements: [0]
+                extension: [30]
+                extension0: [120]
+                layer:
+                - [M3, drawing]
+                pin_layer:
+                - [M3, pin]
+                scope: [0, 130]
+                width: [60]
+                xcolor: [not MPT]
+            via:
+                map:
+                - [via_M3_M4_1]
+        routing_34_cmos_thick:
+            horizontal:
+                elements: [0]
+                extension: [75]
+                extension0: [1200]
+                layer:
+                - [M4, drawing]
+                pin_layer:
+                - [M4, pin]
+                scope: [0, 300, 600, 900]
+                width: [150]
+                ycolor: [not MPT]
+            primary_grid: horizontal
+            type: routing
+            vertical:
+                elements: [0]
+                extension: [30]
+                extension0: [120]
+                layer:
+                - [M3, drawing]
+                pin_layer:
+                - [M3, pin]
+                scope: [0, 130]
+                width: [60]
+                xcolor: [not MPT]
+            via:
+                map:
+                - [via_M3_M4_1]
+                - [via_M3_M4_1]
+                - [via_M3_M4_1]
+                - [via_M3_M4_1]
+        routing_34_thick:
+            horizontal:
+                elements: [0]
+                extension: [75]
+                extension0: [300]
+                layer:
+                - [M4, drawing]
+                pin_layer:
+                - [M4, pin]
+                scope: [0, 600]
+                width: [150]
+                ycolor: [not MPT]
+            primary_grid: horizontal
+            type: routing
+            vertical:
+                elements: [0]
+                extension: [75]
+                extension0: [300]
+                layer:
+                - [M3, drawing]
+                pin_layer:
+                - [M3, pin]
+                scope: [0, 130]
+                width: [150]
+                xcolor: [not MPT]
+            via:
+                map:
+                - [via_M3_M4_1]
+        routing_34_thick_basic:
+            horizontal:
+                elements: [0]
+                extension: [25]
+                extension0: [100]
+                layer:
+                - [M4, drawing]
+                pin_layer:
+                - [M4, pin]
+                scope: [0, 100]
+                width: [50]
+                ycolor: [not MPT]
+            primary_grid: horizontal
+            type: routing
+            vertical:
+                elements: [0]
+                extension: [75]
+                extension0: [300]
+                layer:
+                - [M3, drawing]
+                pin_layer:
+                - [M3, pin]
+                scope: [0, 260]
+                width: [150]
+                xcolor: [not MPT]
+            via:
+                map:
+                - [via_M3_M4_2]
+        routing_34_cmos:
+            horizontal:
+                elements: [100, 200, 300, 400, 500, 700, 800, 900, 1000, 1100]
+                extension: [25, 25, 25, 25, 25, 25, 25, 25, 25, 25]
+                extension0: [100, 100, 100, 100, 100, 100, 100, 100, 100, 100]
+                layer:
+                - [M4, drawing]
+                - [M4, drawing]
+                - [M4, drawing]
+                - [M4, drawing]
+                - [M4, drawing]
+                - [M4, drawing]
+                - [M4, drawing]
+                - [M4, drawing]
+                - [M4, drawing]
+                - [M4, drawing]
+                pin_layer:
+                - [M4, pin]
+                - [M4, pin]
+                - [M4, pin]
+                - [M4, pin]
+                - [M4, pin]
+                - [M4, pin]
+                - [M4, pin]
+                - [M4, pin]
+                - [M4, pin]
+                - [M4, pin]
+                scope: [0, 1200]
+                width: [50, 50, 50, 50, 50, 50, 50, 50, 50, 50]
+                ycolor: [not MPT, not MPT, not MPT, not MPT, not MPT, 
+                         not MPT, not MPT, not MPT, not MPT, not MPT]
+            primary_grid: horizontal
+            type: routing
+            vertical:
+                elements: [0]
+                extension: [30]
+                extension0: [120]
+                layer:
+                - [M3, drawing]
+                pin_layer:
+                - [M3, pin]
+                scope: [0, 130]
+                width: [60]
+                xcolor: [not MPT]
+            via:
+                map:
+                - [via_M3_M4_0, via_M3_M4_0, via_M3_M4_0, via_M3_M4_0, via_M3_M4_0,
+                   via_M3_M4_0, via_M3_M4_0, via_M3_M4_0, via_M3_M4_0, via_M3_M4_0]
+        routing_34_cmos_flipped:
+            horizontal:
+                elements: [100, 200, 300, 400, 500, 700, 800, 900, 1000, 1100]
+                extension: [25, 25, 25, 25, 25, 25, 25, 25, 25, 25]
+                extension0: [100, 100, 100, 100, 100, 100, 100, 100, 100, 100]
+                layer:
+                - [M4, drawing]
+                - [M4, drawing]
+                - [M4, drawing]
+                - [M4, drawing]
+                - [M4, drawing]
+                - [M4, drawing]
+                - [M4, drawing]
+                - [M4, drawing]
+                - [M4, drawing]
+                - [M4, drawing]
+                pin_layer:
+                - [M4, pin]
+                - [M4, pin]
+                - [M4, pin]
+                - [M4, pin]
+                - [M4, pin]
+                - [M4, pin]
+                - [M4, pin]
+                - [M4, pin]
+                - [M4, pin]
+                - [M4, pin]
+                scope: [0, 1200]
+                width: [50, 50, 50, 50, 50, 50, 50, 50, 50, 50]
+                ycolor: [not MPT, not MPT, not MPT, not MPT, not MPT, 
+                         not MPT, not MPT, not MPT, not MPT, not MPT]
+            primary_grid: horizontal
+            type: routing
+            vertical:
+                elements: [0]
+                extension: [30]
+                extension0: [120]
+                layer:
+                - [M3, drawing]
+                pin_layer:
+                - [M3, pin]
+                scope: [0, 130]
+                width: [60]
+                xcolor: [not MPT]
+            via:
+                map:
+                - [via_M3_M4_0, via_M3_M4_0, via_M3_M4_0, via_M3_M4_0, via_M3_M4_0,
+                   via_M3_M4_0, via_M3_M4_0, via_M3_M4_0, via_M3_M4_0, via_M3_M4_0]
+        routing_45_basic:
+            horizontal:
+                elements: [0]
+                extension: [25]
+                extension0: [100]
+                layer:
+                - [M4, drawing]
+                pin_layer:
+                - [M4, pin]
+                scope: [0, 100]
+                width: [50]
+                ycolor: [not MPT]
+            primary_grid: horizontal
+            type: routing
+            vertical:
+                elements: [0]
+                extension: [25]
+                extension0: [100]
+                layer:
+                - [M5, drawing]
+                pin_layer:
+                - [M5, pin]
+                scope: [0, 130]
+                width: [50]
+                xcolor: [not MPT]
+            via:
+                map:
+                - [via_M4_M5_0]
+        routing_45_basic_thick:
+            horizontal:
+                elements: [0]
+                extension: [25]
+                extension0: [100]
+                layer:
+                - [M4, drawing]
+                pin_layer:
+                - [M4, pin]
+                scope: [0, 100]
+                width: [50]
+                ycolor: [not MPT]
+            primary_grid: horizontal
+            type: routing
+            vertical:
+                elements: [0]
+                extension: [75]
+                extension0: [300]
+                layer:
+                - [M5, drawing]
+                pin_layer:
+                - [M5, pin]
+                scope: [0, 260]
+                width: [150]
+                xcolor: [not MPT]
+            via:
+                map:
+                - [via_M4_M5_1]
+        routing_45_thick:
+            horizontal:
+                elements: [0]
+                extension: [75]
+                extension0: [300]
+                layer:
+                - [M4, drawing]
+                pin_layer:
+                - [M4, pin]
+                scope: [0, 600]
+                width: [150]
+                ycolor: [not MPT]
+            primary_grid: horizontal
+            type: routing
+            vertical:
+                elements: [0]
+                extension: [75]
+                extension0: [300]
+                layer:
+                - [M5, drawing]
+                pin_layer:
+                - [M5, pin]
+                scope: [0, 260]
+                width: [150]
+                xcolor: [not MPT]
+            via:
+                map:
+                - [via_M4_M5_2]
+        routing_45_thick_basic:
+            horizontal:
+                elements: [0]
+                extension: [75]
+                extension0: [300]
+                layer:
+                - [M4, drawing]
+                pin_layer:
+                - [M4, pin]
+                scope: [0, 600]
+                width: [150]
+                ycolor: [not MPT]
+            primary_grid: horizontal
+            type: routing
+            vertical:
+                elements: [0]
+                extension: [25]
+                extension0: [100]
+                layer:
+                - [M5, drawing]
+                pin_layer:
+                - [M5, pin]
+                scope: [0, 260]
+                width: [50]
+                xcolor: [not MPT]
+            via:
+                map:
+                - [via_M4_M5_2]
+        routing_45_cmos:
+            horizontal:
+                elements: [100, 200, 300, 400, 500, 700, 800, 900, 1000, 1100]
+                extension: [25, 25, 25, 25, 25, 25, 25, 25, 25, 25]
+                extension0: [100, 100, 100, 100, 100, 100, 100, 100, 100, 100]
+                layer:
+                - [M4, drawing]
+                - [M4, drawing]
+                - [M4, drawing]
+                - [M4, drawing]
+                - [M4, drawing]
+                - [M4, drawing]
+                - [M4, drawing]
+                - [M4, drawing]
+                - [M4, drawing]
+                - [M4, drawing]
+                pin_layer:
+                - [M4, pin]
+                - [M4, pin]
+                - [M4, pin]
+                - [M4, pin]
+                - [M4, pin]
+                - [M4, pin]
+                - [M4, pin]
+                - [M4, pin]
+                - [M4, pin]
+                - [M4, pin]
+                scope: [0, 1200]
+                width: [50, 50, 50, 50, 50, 50, 50, 50, 50, 50]
+                ycolor: [not MPT, not MPT, not MPT, not MPT, not MPT, 
+                         not MPT, not MPT, not MPT, not MPT, not MPT]
+            primary_grid: horizontal
+            type: routing
+            vertical:
+                elements: [0]
+                extension: [25]
+                extension0: [100]
+                layer:
+                - [M5, drawing]
+                pin_layer:
+                - [M5, pin]
+                scope: [0, 130]
+                width: [50]
+                xcolor: [not MPT]
+            via:
+                map:
+                - [via_M4_M5_0, via_M4_M5_0, via_M4_M5_0, via_M4_M5_0, via_M4_M5_0,
+                   via_M4_M5_0, via_M4_M5_0, via_M4_M5_0, via_M4_M5_0, via_M4_M5_0]
+        routing_45_cmos_flipped:
+            horizontal:
+                elements: [100, 200, 300, 400, 500, 700, 800, 900, 1000, 1100]
+                extension: [25, 25, 25, 25, 25, 25, 25, 25, 25, 25]
+                extension0: [100, 100, 100, 100, 100, 100, 100, 100, 100, 100]
+                layer:
+                - [M4, drawing]
+                - [M4, drawing]
+                - [M4, drawing]
+                - [M4, drawing]
+                - [M4, drawing]
+                - [M4, drawing]
+                - [M4, drawing]
+                - [M4, drawing]
+                - [M4, drawing]
+                - [M4, drawing]
+                pin_layer:
+                - [M4, pin]
+                - [M4, pin]
+                - [M4, pin]
+                - [M4, pin]
+                - [M4, pin]
+                - [M4, pin]
+                - [M4, pin]
+                - [M4, pin]
+                - [M4, pin]
+                - [M4, pin]
+                scope: [0, 1200]
+                width: [50, 50, 50, 50, 50, 50, 50, 50, 50, 50]
+                ycolor: [not MPT, not MPT, not MPT, not MPT, not MPT, 
+                         not MPT, not MPT, not MPT, not MPT, not MPT]
+            primary_grid: horizontal
+            type: routing
+            vertical:
+                elements: [0]
+                extension: [25]
+                extension0: [100]
+                layer:
+                - [M5, drawing]
+                pin_layer:
+                - [M5, pin]
+                scope: [0, 130]
+                width: [50]
+                xcolor: [not MPT]
+            via:
+                map:
+                - [via_M4_M5_0, via_M4_M5_0, via_M4_M5_0, via_M4_M5_0, via_M4_M5_0,
+                   via_M4_M5_0, via_M4_M5_0, via_M4_M5_0, via_M4_M5_0, via_M4_M5_0]
+        routing_45_cmos_thick:
+            horizontal:
+                elements: [100, 200, 300, 400, 500, 700, 800, 900, 1000, 1100]
+                extension: [25, 25, 25, 25, 25, 25, 25, 25, 25, 25]
+                extension0: [100, 100, 100, 100, 100, 100, 100, 100, 100, 100]
+                layer:
+                - [M4, drawing]
+                - [M4, drawing]
+                - [M4, drawing]
+                - [M4, drawing]
+                - [M4, drawing]
+                - [M4, drawing]
+                - [M4, drawing]
+                - [M4, drawing]
+                - [M4, drawing]
+                - [M4, drawing]
+                pin_layer:
+                - [M4, pin]
+                - [M4, pin]
+                - [M4, pin]
+                - [M4, pin]
+                - [M4, pin]
+                - [M4, pin]
+                - [M4, pin]
+                - [M4, pin]
+                - [M4, pin]
+                - [M4, pin]
+                scope: [0, 1200]
+                width: [50, 50, 50, 50, 50, 50, 50, 50, 50, 50]
+                ycolor: [not MPT, not MPT, not MPT, not MPT, not MPT, 
+                         not MPT, not MPT, not MPT, not MPT, not MPT]
+            primary_grid: horizontal
+            type: routing
+            vertical:
+                elements: [0]
+                extension: [25]
+                extension0: [100]
+                layer:
+                - [M5, drawing]
+                pin_layer:
+                - [M5, pin]
+                scope: [0, 260]
+                width: [150]
+                xcolor: [not MPT]
+            via:
+                map:
+                - [via_M4_M5_1, via_M4_M5_1, via_M4_M5_1, via_M4_M5_1, via_M4_M5_1,
+                   via_M4_M5_1, via_M4_M5_1, via_M4_M5_1, via_M4_M5_1, via_M4_M5_1]
+        routing_56_basic:
+            horizontal:
+                elements: [0]
+                extension: [25]
+                extension0: [100]
+                layer:
+                - [M6, drawing]
+                pin_layer:
+                - [M6, pin]
+                scope: [0, 100]
+                width: [50]
+                ycolor: [not MPT]
+            primary_grid: horizontal
+            type: routing
+            vertical:
+                elements: [0]
+                extension: [25]
+                extension0: [100]
+                layer:
+                - [M5, drawing]
+                pin_layer:
+                - [M5, pin]
+                scope: [0, 100]
+                width: [50]
+                xcolor: [not MPT]
+            via:
+                map:
+                - [via_M5_M6_0]
+        routing_67_basic:
+            horizontal:
+                elements: [0]
+                extension: [25]
+                extension0: [100]
+                layer:
+                - [M6, drawing]
+                pin_layer:
+                - [M6, pin]
+                scope: [0, 100]
+                width: [50]
+                ycolor: [not MPT]
+            primary_grid: horizontal
+            type: routing
+            vertical:
+                elements: [0]
+                extension: [25]
+                extension0: [100]
+                layer:
+                - [M7, drawing]
+                pin_layer:
+                - [M7, pin]
+                scope: [0, 100]
+                width: [50]
+                xcolor: [not MPT]
+            via:
+                map:
+                - [via_M6_M7_0]
+mpl: *laygo2_tech_mpl
+templates:
+    tsmcN28_microtemplates_dense:
+        boundary_bottom:
+            pins: {}
+            unit_size: [130, 600]
+            xy:
+            - [0, 0]
+            - [130, 600]
+        boundary_bottomleft:
+            pins: {}
+            unit_size: [1300, 600]
+            xy:
+            - [0, 0]
+            - [1300, 600]
+        boundary_bottomright:
+            pins: {}
+            unit_size: [1300, 600]
+            xy:
+            - [0, 0]
+            - [1300, 600]
+        boundary_left:
+            pins: {}
+            unit_size: [1040, 600]
+            xy:
+            - [0, 0]
+            - [1040, 600]
+        boundary_right:
+            pins: {}
+            unit_size: [1040, 600]
+            xy:
+            - [0, 0]
+            - [1040, 600]
+        boundary_top:
+            pins: {}
+            unit_size: [130, 600]
+            xy:
+            - [0, 0]
+            - [130, 600]
+        boundary_topleft:
+            pins: {}
+            unit_size: [1300, 600]
+            xy:
+            - [0, 0]
+            - [1300, 600]
+        boundary_topright:
+            pins: {}
+            unit_size: [1300, 600]
+            xy:
+            - [0, 0]
+            - [1300, 600]
+        momcap_boundary:
+            pins: {}
+            rects: {}
+            unit_size: [2600, 200]
+            xy:
+            - [0, 0]
+            - [2600, 200]
+        momcap_center:
+            pins:
+                BOTTOM:
+                    layer: [M4, pin]
+                    netname: BOTTOM
+                    xy:
+                    - [200, 75]
+                    - [2400, 125]
+                TOP:
+                    layer: [M4, pin]
+                    netname: TOP
+                    xy:
+                    - [0, 175]
+                    - [2600, 225]
+            rects: {}
+            unit_size: [2600, 200]
+            xy:
+            - [0, 0]
+            - [2600, 200]
+        momcap_dmy:
+            pins: {}
+            rects: {}
+            unit_size: [2600, 200]
+            xy:
+            - [0, 0]
+            - [2600, 200]
+        nmos4_fast_boundary:
+            pins: {}
+            rects: {}
+            unit_size: [130, 600]
+            xy:
+            - [0, 0]
+            - [130, 600]
+        nmos4_fast_center_2stack:
+            pins:
+                D0:
+                    layer: [M1, pin]
+                    netname: D0
+                    xy:
+                    - [235, 130]
+                    - [285, 370]
+                G0:
+                    layer: [M1, pin]
+                    netname: G0
+                    xy:
+                    - [-35, 430]
+                    - [35, 540]
+                G1:
+                    layer: [M1, pin]
+                    netname: G1
+                    xy:
+                    - [225, 430]
+                    - [295, 540]
+                S0:
+                    layer: [M1, pin]
+                    netname: S0
+                    xy:
+                    - [-25, 130]
+                    - [25, 370]
+            rects: {}
+            unit_size: [260, 600]
+            xy:
+            - [0, 0]
+            - [260, 600]
+        nmos4_fast_center_nf1_left:
+            pins:
+                D0:
+                    layer: [M1, pin]
+                    netname: D0
+                    xy:
+                    - [105, 130]
+                    - [155, 370]
+                G0:
+                    layer: [M1, pin]
+                    netname: G0
+                    xy:
+                    - [-35, 430]
+                    - [35, 540]
+                S0:
+                    layer: [M1, pin]
+                    netname: S0
+                    xy:
+                    - [-25, 130]
+                    - [25, 370]
+            rects: {}
+            unit_size: [130, 600]
+            xy:
+            - [0, 0]
+            - [130, 600]
+        nmos4_fast_center_nf1_right:
+            pins:
+                D0:
+                    layer: [M1, pin]
+                    netname: D0
+                    xy:
+                    - [105, 130]
+                    - [155, 370]
+                G0:
+                    layer: [M1, pin]
+                    netname: G0
+                    xy:
+                    - [95, 430]
+                    - [165, 540]
+                S0:
+                    layer: [M1, pin]
+                    netname: S0
+                    xy:
+                    - [-25, 130]
+                    - [25, 370]
+            rects: {}
+            unit_size: [130, 600]
+            xy:
+            - [0, 0]
+            - [130, 600]
+        nmos4_fast_center_nf2:
+            pins:
+                D0:
+                    layer: [M1, pin]
+                    netname: D0
+                    xy:
+                    - [105, 130]
+                    - [155, 370]
+                G0:
+                    layer: [M1, pin]
+                    netname: G0
+                    xy:
+                    - [30, 430]
+                    - [230, 540]
+                S0:
+                    layer: [M1, pin]
+                    netname: S0
+                    xy:
+                    - [-25, 130]
+                    - [25, 370]
+                S1:
+                    layer: [M1, pin]
+                    netname: S1
+                    xy:
+                    - [235, 130]
+                    - [285, 370]
+            rects: {}
+            unit_size: [260, 600]
+            xy:
+            - [0, 0]
+            - [260, 600]
+        nmos4_fast_dmy_nf2:
+            pins:
+                D0:
+                    layer: [M1, pin]
+                    netname: D0
+                    xy:
+                    - [105, 130]
+                    - [155, 370]
+                S0:
+                    layer: [M1, pin]
+                    netname: S0
+                    xy:
+                    - [-25, 130]
+                    - [25, 370]
+                S1:
+                    layer: [M1, pin]
+                    netname: S1
+                    xy:
+                    - [235, 130]
+                    - [285, 370]
+            rects: {}
+            unit_size: [260, 600]
+            xy:
+            - [0, 0]
+            - [260, 600]
+        nmos4_fast_left:
+            pins: {}
+            rects: {}
+            unit_size: [1300, 600]
+            xy:
+            - [0, 0]
+            - [1300, 600]
+        nmos4_fast_right:
+            pins: {}
+            rects: {}
+            unit_size: [1300, 600]
+            xy:
+            - [0, 0]
+            - [1300, 600]
+        nmos4_fast_space:
+            pins: {}
+            rects: {}
+            unit_size: [130, 600]
+            xy:
+            - [0, 0]
+            - [130, 600]
+        nmos4_fast_space_1x:
+            pins: {}
+            rects: {}
+            unit_size: [130, 600]
+            xy:
+            - [0, 0]
+            - [130, 600]
+        nmos4_fast_space_2x:
+            pins: {}
+            rects: {}
+            unit_size: [260, 600]
+            xy:
+            - [0, 0]
+            - [260, 600]
+        nmos4_fast_space_4x:
+            pins: {}
+            rects: {}
+            unit_size: [520, 600]
+            xy:
+            - [0, 0]
+            - [520, 600]
+        nmos4_fast_space_nf2:
+            pins: {}
+            rects: {}
+            unit_size: [260, 600]
+            xy:
+            - [0, 0]
+            - [260, 600]
+        nmos4_fast_space_nf4:
+            pins: {}
+            rects: {}
+            unit_size: [520, 600]
+            xy:
+            - [0, 0]
+            - [520, 600]
+        nmos4_fast_tap:
+            pins:
+                TAP0:
+                    layer: [M1, pin]
+                    netname: TAP0
+                    xy:
+                    - [365, 130]
+                    - [415, 370]
+                TAP1:
+                    layer: [M1, pin]
+                    netname: TAP1
+                    xy:
+                    - [495, 130]
+                    - [545, 370]
+            rects: {}
+            unit_size: [910, 600]
+            xy:
+            - [0, 0]
+            - [910, 600]
+        ntap_fast_boundary:
+            pins: {}
+            rects: {}
+            unit_size: [130, 600]
+            xy:
+            - [0, 0]
+            - [130, 600]
+        ntap_fast_center_nf1:
+            pins:
+                TAP0:
+                    layer: [M1, pin]
+                    netname: TAP0
+                    xy:
+                    - [-25, 45]
+                    - [25, 555]
+                TAP1:
+                    layer: [M1, pin]
+                    netname: TAP1
+                    xy:
+                    - [105, 45]
+                    - [155, 555]
+            rects: {}
+            unit_size: [130, 600]
+            xy:
+            - [0, 0]
+            - [130, 600]
+        ntap_fast_center_nf2:
+            pins:
+                TAP0:
+                    layer: [M1, pin]
+                    netname: TAP0
+                    xy:
+                    - [-25, 45]
+                    - [25, 555]
+                TAP1:
+                    layer: [M1, pin]
+                    netname: TAP1
+                    xy:
+                    - [105, 45]
+                    - [155, 555]
+                TAP2:
+                    layer: [M1, pin]
+                    netname: TAP2
+                    xy:
+                    - [235, 45]
+                    - [285, 555]
+            rects: {}
+            unit_size: [260, 600]
+            xy:
+            - [0, 0]
+            - [260, 600]
+        ntap_fast_center_nf2_v2:
+            pins:
+                TAP0:
+                    layer: [M1, pin]
+                    netname: TAP0
+                    xy:
+                    - [-25, 45]
+                    - [25, 555]
+                TAP1:
+                    layer: [M1, pin]
+                    netname: TAP1
+                    xy:
+                    - [105, 45]
+                    - [155, 555]
+                TAP2:
+                    layer: [M1, pin]
+                    netname: TAP2
+                    xy:
+                    - [235, 45]
+                    - [285, 555]
+            rects: {}
+            unit_size: [260, 600]
+            xy:
+            - [0, 0]
+            - [260, 600]
+        ntap_fast_left:
+            pins: {}
+            rects: {}
+            unit_size: [1300, 600]
+            xy:
+            - [0, 0]
+            - [1300, 600]
+        ntap_fast_right:
+            pins: {}
+            rects: {}
+            unit_size: [1300, 600]
+            xy:
+            - [0, 0]
+            - [1300, 600]
+        ntap_fast_space:
+            pins: {}
+            rects: {}
+            unit_size: [130, 600]
+            xy:
+            - [0, 0]
+            - [130, 600]
+        ntap_fast_space_nf2:
+            pins: {}
+            rects: {}
+            unit_size: [260, 600]
+            xy:
+            - [0, 0]
+            - [260, 600]
+        ntap_fast_space_nf4:
+            pins: {}
+            rects: {}
+            unit_size: [520, 600]
+            xy:
+            - [0, 0]
+            - [520, 600]
+        pmos4_fast_boundary:
+            pins: {}
+            rects: {}
+            unit_size: [130, 600]
+            xy:
+            - [0, 0]
+            - [130, 600]
+        pmos4_fast_center_2stack:
+            pins:
+                D0:
+                    layer: [M1, pin]
+                    netname: D0
+                    xy:
+                    - [235, 130]
+                    - [285, 370]
+                G0:
+                    layer: [M1, pin]
+                    netname: G0
+                    xy:
+                    - [-35, 430]
+                    - [35, 540]
+                G1:
+                    layer: [M1, pin]
+                    netname: G1
+                    xy:
+                    - [225, 430]
+                    - [295, 540]
+                S0:
+                    layer: [M1, pin]
+                    netname: S0
+                    xy:
+                    - [-25, 130]
+                    - [25, 370]
+            rects: {}
+            unit_size: [260, 600]
+            xy:
+            - [0, 0]
+            - [260, 600]
+        pmos4_fast_center_nf1_left:
+            pins:
+                D0:
+                    layer: [M1, pin]
+                    netname: D0
+                    xy:
+                    - [105, 130]
+                    - [155, 370]
+                G0:
+                    layer: [M1, pin]
+                    netname: G0
+                    xy:
+                    - [-35, 430]
+                    - [35, 540]
+                S0:
+                    layer: [M1, pin]
+                    netname: S0
+                    xy:
+                    - [-25, 130]
+                    - [25, 370]
+            rects: {}
+            unit_size: [130, 600]
+            xy:
+            - [0, 0]
+            - [130, 600]
+        pmos4_fast_center_nf1_right:
+            pins:
+                D0:
+                    layer: [M1, pin]
+                    netname: D0
+                    xy:
+                    - [105, 130]
+                    - [155, 370]
+                G0:
+                    layer: [M1, pin]
+                    netname: G0
+                    xy:
+                    - [95, 430]
+                    - [165, 540]
+                S0:
+                    layer: [M1, pin]
+                    netname: S0
+                    xy:
+                    - [-25, 130]
+                    - [25, 370]
+            rects: {}
+            unit_size: [130, 600]
+            xy:
+            - [0, 0]
+            - [130, 600]
+        pmos4_fast_center_nf2:
+            pins:
+                D0:
+                    layer: [M1, pin]
+                    netname: D0
+                    xy:
+                    - [105, 130]
+                    - [155, 370]
+                G0:
+                    layer: [M1, pin]
+                    netname: G0
+                    xy:
+                    - [30, 430]
+                    - [230, 540]
+                S0:
+                    layer: [M1, pin]
+                    netname: S0
+                    xy:
+                    - [-25, 130]
+                    - [25, 370]
+                S1:
+                    layer: [M1, pin]
+                    netname: S1
+                    xy:
+                    - [235, 130]
+                    - [285, 370]
+            rects: {}
+            unit_size: [260, 600]
+            xy:
+            - [0, 0]
+            - [260, 600]
+        pmos4_fast_dmy_nf2:
+            pins:
+                D0:
+                    layer: [M1, pin]
+                    netname: D0
+                    xy:
+                    - [105, 130]
+                    - [155, 370]
+                S0:
+                    layer: [M1, pin]
+                    netname: S0
+                    xy:
+                    - [-25, 130]
+                    - [25, 370]
+                S1:
+                    layer: [M1, pin]
+                    netname: S1
+                    xy:
+                    - [235, 130]
+                    - [285, 370]
+            rects: {}
+            unit_size: [260, 600]
+            xy:
+            - [0, 0]
+            - [260, 600]
+        pmos4_fast_left:
+            pins: {}
+            rects: {}
+            unit_size: [1300, 600]
+            xy:
+            - [0, 0]
+            - [1300, 600]
+        pmos4_fast_right:
+            pins: {}
+            rects: {}
+            unit_size: [1300, 600]
+            xy:
+            - [0, 0]
+            - [1300, 600]
+        pmos4_fast_space:
+            pins: {}
+            rects: {}
+            unit_size: [130, 600]
+            xy:
+            - [0, 0]
+            - [130, 600]
+        pmos4_fast_space_1x:
+            pins: {}
+            rects: {}
+            unit_size: [130, 600]
+            xy:
+            - [0, 0]
+            - [130, 600]
+        pmos4_fast_space_2x:
+            pins: {}
+            rects: {}
+            unit_size: [260, 600]
+            xy:
+            - [0, 0]
+            - [260, 600]
+        pmos4_fast_space_4x:
+            pins: {}
+            rects: {}
+            unit_size: [520, 600]
+            xy:
+            - [0, 0]
+            - [520, 600]
+        pmos4_fast_space_nf2:
+            pins: {}
+            rects: {}
+            unit_size: [260, 600]
+            xy:
+            - [0, 0]
+            - [260, 600]
+        pmos4_fast_space_nf4:
+            pins: {}
+            rects: {}
+            unit_size: [520, 600]
+            xy:
+            - [0, 0]
+            - [520, 600]
+        pmos4_fast_tap:
+            pins:
+                TAP0:
+                    layer: [M1, pin]
+                    netname: TAP0
+                    xy:
+                    - [365, 130]
+                    - [415, 370]
+                TAP1:
+                    layer: [M1, pin]
+                    netname: TAP1
+                    xy:
+                    - [495, 130]
+                    - [545, 370]
+            rects: {}
+            unit_size: [910, 600]
+            xy:
+            - [0, 0]
+            - [910, 600]
+        ptap_fast_boundary:
+            pins: {}
+            rects: {}
+            unit_size: [130, 600]
+            xy:
+            - [0, 0]
+            - [130, 600]
+        ptap_fast_center_nf1:
+            pins:
+                TAP0:
+                    layer: [M1, pin]
+                    netname: TAP0
+                    xy:
+                    - [-25, 45]
+                    - [25, 555]
+                TAP1:
+                    layer: [M1, pin]
+                    netname: TAP1
+                    xy:
+                    - [105, 45]
+                    - [155, 555]
+            rects: {}
+            unit_size: [130, 600]
+            xy:
+            - [0, 0]
+            - [130, 600]
+        ptap_fast_center_nf2:
+            pins:
+                TAP0:
+                    layer: [M1, pin]
+                    netname: TAP0
+                    xy:
+                    - [-25, 45]
+                    - [25, 555]
+                TAP1:
+                    layer: [M1, pin]
+                    netname: TAP1
+                    xy:
+                    - [105, 45]
+                    - [155, 555]
+                TAP2:
+                    layer: [M1, pin]
+                    netname: TAP2
+                    xy:
+                    - [235, 45]
+                    - [285, 555]
+            rects: {}
+            unit_size: [260, 600]
+            xy:
+            - [0, 0]
+            - [260, 600]
+        ptap_fast_center_nf2_v2:
+            pins:
+                TAP0:
+                    layer: [M1, pin]
+                    netname: TAP0
+                    xy:
+                    - [-25, 45]
+                    - [25, 555]
+                TAP1:
+                    layer: [M1, pin]
+                    netname: TAP1
+                    xy:
+                    - [105, 45]
+                    - [155, 555]
+                TAP2:
+                    layer: [M1, pin]
+                    netname: TAP2
+                    xy:
+                    - [235, 45]
+                    - [285, 555]
+            rects: {}
+            unit_size: [260, 600]
+            xy:
+            - [0, 0]
+            - [260, 600]
+        ptap_fast_left:
+            pins: {}
+            rects: {}
+            unit_size: [1300, 600]
+            xy:
+            - [0, 0]
+            - [1300, 600]
+        ptap_fast_right:
+            pins: {}
+            rects: {}
+            unit_size: [1300, 600]
+            xy:
+            - [0, 0]
+            - [1300, 600]
+        ptap_fast_space:
+            pins: {}
+            rects: {}
+            unit_size: [130, 600]
+            xy:
+            - [0, 0]
+            - [130, 600]
+        ptap_fast_space_nf2:
+            pins: {}
+            rects: {}
+            unit_size: [260, 600]
+            xy:
+            - [0, 0]
+            - [260, 600]
+        ptap_fast_space_nf4:
+            pins: {}
+            rects: {}
+            unit_size: [520, 600]
+            xy:
+            - [0, 0]
+            - [520, 600]
+        rppoly:
+            pins:
+                MINUS:
+                    layer: [M2, pin]
+                    netname: MINUS
+                    xy:
+                    - [230, 175]
+                    - [550, 225]
+                PLUS:
+                    layer: [M2, pin]
+                    netname: PLUS
+                    xy:
+                    - [230, 975]
+                    - [550, 1025]
+            rects: {}
+            unit_size: [780, 1200]
+            xy:
+            - [0, 0]
+            - [780, 1200]
+        via_M1_M2_0:
+            pins: {}
+            xy:
+            - [0, 0]
+            - [0, 0]
+        via_M1_M2_1:
+            pins: {}
+            xy:
+            - [0, 0]
+            - [0, 0]
+        via_M1_M2_2:
+            pins: {}
+            xy:
+            - [0, 0]
+            - [0, 0]
+        via_M2_M3_0:
+            pins: {}
+            xy:
+            - [0, 0]
+            - [0, 0]
+        via_M2_M3_1:
+            pins: {}
+            xy:
+            - [0, 0]
+            - [0, 0]
+        via_M2_M3_2:
+            pins: {}
+            xy:
+            - [0, 0]
+            - [0, 0]
+        via_M2_M3_3:
+            pins: {}
+            xy:
+            - [0, 0]
+            - [0, 0]
+        via_M3_M4_0:
+            pins: {}
+            xy:
+            - [0, 0]
+            - [0, 0]
+        via_M3_M4_1:
+            pins: {}
+            xy:
+            - [0, 0]
+            - [0, 0]
+        via_M3_M4_2:
+            pins: {}
+            xy:
+            - [0, 0]
+            - [0, 0]
+        via_M4_M5_0:
+            pins: {}
+            xy:
+            - [0, 0]
+            - [0, 0]
+        via_M4_M5_1:
+            pins: {}
+            xy:
+            - [0, 0]
+            - [0, 0]
+        via_M4_M5_2:
+            pins: {}
+            xy:
+            - [0, 0]
+            - [0, 0]
+        via_M5_M6_0:
+            pins: {}
+            xy:
+            - [0, 0]
+            - [0, 0]
+        via_M6_M7_0:
+            pins: {}
+            xy:
+            - [0, 0]
+            - [0, 0]

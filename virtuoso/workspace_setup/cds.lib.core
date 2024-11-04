@@ -1,0 +1,27 @@
+#cadence base libraries
+DEFINE     analogLib $CDSHOME/tools/dfII/etc/cdslib/artist/analogLib
+DEFINE     basic     $CDSHOME/tools/dfII/etc/cdslib/basic
+
+#technology base libraries
+DEFINE sky130_fd_pr_main $BAG_TECH_CONFIG_DIR/workspace_setup/PDK/libs/sky130_fd_pr_main
+DEFINE avTech /TOOL/CADENCE/ASSURA41_IC618/tools.lnx86/assura/etc/avtech/avTech
+#DEFINE tpbn45v /TECH/tsmc/CLN45GS/IO/tpbn45v_140a/TSMCHOME/digital/Back_End/cdk/10lm_oa/tpbn45v
+#DEFINE tpan45gsgv2od3 /TECH/tsmc/CLN45GS/IO/tpan45gsgv2od3_130a/TSMCHOME/digital/Back_End/cdk/tpan45gsgv2od3_120a/mt/10lm_oa/tpan45gsgv2od3 
+#DEFINE tcbn45gsbwp /TECH/tsmc/CLN45GS/STD/tcbn45gsbwp_200a/TSMCHOME/digital/Back_End/cdk_oa/tcbn45gsbwp_120b/tcbn45gsbwp
+
+#DEFINE decap_tsmc40gp /WORK/jdhan/legacy/ISDL/tsmcN45/decap_tsmc40gp  
+#DEFINE oj_pad_top /WORK/jdhan/legacy/ISDL/tsmcN45/oj_pad_top  
+#DEFINE tpbn45v_cup /WORK/jdhan/legacy/ISDL/tsmcN45/tpbn45v_cup  
+#DEFINE tpbn45v_wb /WORK/jdhan/legacy/ISDL/tsmcN45/tpbn45v_wb  
+#DEFINE tsmc40g_SR /WORK/jdhan/legacy/ISDL/tsmcN45/tsmc40g_SR  
+#DEFINE tsmc40g_pad /WORK/jdhan/legacy/ISDL/tsmcN45/tsmc40g_pad  
+#DEFINE tsmc40g_pad_frame /WORK/jdhan/legacy/ISDL/tsmcN45/tsmc40g_pad_frame  
+#DEFINE tsmc40g_pad_frame_w_SR /WORK/jdhan/legacy/ISDL/tsmcN45/tsmc40g_pad_frame_w_SR
+
+# BAG Libraries
+INCLUDE cds.lib.bag
+
+# Design libraries
+#DEFINE SPUTNIK_B0_00JD /WORK/jdhan/BAG/bag_workspace_tsmcN45/SPUTNIK_B0_00JD
+#DEFINE SPUTNIK_B0_00JD_DM /autofs/WORK/jdhan/BAG/bag_workspace_tsmcN45/SPUTNIK_B0_00JD_DM
+#DEFINE SPUTNIK_B0_00JD_DODPO /autofs/WORK/jdhan/BAG/bag_workspace_tsmcN45/SPUTNIK_B0_00JD_DODPO

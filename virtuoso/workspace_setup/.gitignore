@@ -1,0 +1,82 @@
+# python/IDE files
+*.pyc
+__pycache__
+.idea
+
+# misc edit/log files
+*~
+*.log
+IPOPT.out
+
+# misc BAG files
+BAG_server_port.txt
+BAG_sim_server_port.txt
+data
+
+# misc configuration/history files
+.ipython
+.jupyter
+.ipynb_checkpoints
+
+# generated files/directories
+calibre_run
+gen_libs
+pvs_run
+rundir_drc
+rundir_lvs
+rundir_pex
+cds.lib
+BAGTMP
+
+# cadence files
+.assura*
+.cadence
+*.cdslck
+.calibreviewsetup
+.tmp_*
+libManager.log.*
+marsLog*
+simulation
+#.cdsenv.personal
+#.cdsinit.personal
+
+# calibre files
+.cgidrcdb
+.cgilvsdb
+calibreview.setup
+
+# pvs files
+.QRC.run
+.preRcx.Last.State
+.qrc.Last.state
+
+# assure files
+assura_rundir
+.assura_LVS.run
+.lvs.Last.state
+
+# laygo files
+adc_sar*
+*logic_templates*
+laygo_working
+*.gds
+serdes_generated*
+*.il
+laygo_generators
+
+# Design files
+bag_libs.def
+SPUTNIK*
+dummyfill
+xStrmOut_cellMap.txt
+ISDL*
+nand_generate.py
+presumbit*
+tcbn65gplus*
+jdskill
+laygo2_bak*
+laygo2_test*
+laygo2_test_nand2.il
+laygo2_test_templates.yaml
+# Exeption (Include Following Files regardless of ignorance)
+!start_bag.sh

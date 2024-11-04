@@ -1,0 +1,31 @@
+*lvsRulesFile: ../../../Calibre/lvs/calibre.lvs
+*lvsRunDir: ./rundir_lvs
+*lvsLayoutPaths: clkrxtop00ej_horizontal_jd_core.calibre.db
+*lvsLayoutPrimary: clkrxtop00ej_horizontal_jd_core
+*lvsLayoutLibrary: SPUTNIK_B0_00JD
+*lvsLayoutView: layout
+*lvsLayoutGetFromViewer: 1
+*lvsSourcePath: clkrxtop00ej_horizontal_jd_core.src.net
+*lvsSourcePrimary: clkrxtop00ej_horizontal_jd_core
+*lvsSourceLibrary: SPUTNIK_B0_00JD
+*lvsSourceView: schematic
+*lvsSourceGetFromViewer: 1
+*lvsSpiceFile: clkrxtop00ej_horizontal_jd_core.sp
+*lvsPowerNames: VDD* TAVDD* VTT*
+*lvsGroundNames: VSS*
+*lvsERCDatabase: clkrxtop00ej_horizontal_jd_core.erc.results
+*lvsERCSummaryFile: clkrxtop00ej_horizontal_jd_core.erc.summary
+*lvsIncludeCmdsType: SVRF
+*lvsSVRFCmds: {SOURCE CASE YES} {LAYOUT CASE YES} {} {}
+*lvsReportFile: clkrxtop00ej_horizontal_jd_core.lvs.report
+*lvsMaskDBFile: clkrxtop00ej_horizontal_jd_core.maskdb
+*cmnWarnLayoutOverwrite: 0
+*cmnWarnSourceOverwrite: 0
+*cmnShowOptions: 1
+*cmnVConnectColon: 1
+*cmnSlaveHosts: {use {}} {hostName {}} {cpuCount {}} {a32a64 {}} {rsh {}} {maxMem {}} {workingDir {}} {layerDir {}} {mgcLibPath {}} {launchName {}}
+*cmnLSFSlaveTbl: {use 1} {totalCpus 1} {minCpus 1} {architecture {{}}} {minMemory {{}}} {resourceOptions {{}}} {submitOptions {{}}}
+*cmnGridSlaveTbl: {use 1} {totalCpus 1} {minCpus 1} {architecture {{}}} {minMemory {{}}} {resourceOptions {{}}} {submitOptions {{}}}
+*cmnFDILayoutLibrary: SPUTNIK_B0_00JD
+*cmnFDILayoutView: layout
+*cmnFDIDEFLayoutPath: clkrxtop00ej_horizontal_jd_core.def

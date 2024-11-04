@@ -1,0 +1,5 @@
+#! /bin/sh
+
+export CAD_ROOT=/usr/local/lib
+export PDK_ROOT=/usr/local/share/pdk
+export PDK=sky130B
