@@ -3,7 +3,7 @@ export:
     bag:
         scale: !!float 1e-3
         reset_library: false
-        tech_library: tsmcN28
+        tech_library: sky130
     mpl: &laygo2_tech_mpl
         colormap:
             M1:
@@ -103,130 +103,155 @@ export:
         order: [__instance__, __instance_pin__, prBoundary, NW, PP, NP, OD, PO, M1, VIA1,
             M2, VIA2, M3, VIA3, M4, VIA4, M5, VIA5, M6, VIA6, M7, VIA7, M8, VIA8, M9]
 grids:
-    tsmcN28_microtemplates_dense:
+    sky130_microtemplates_dense:
         placement_basic:
             horizontal:
                 elements: [0]
-                scope: [0, 50]
+                scope: [0, 560]
             type: placement
             vertical:
                 elements: [0]
-                scope: [0, 130]
+                scope: [0, 230]
+        routing_01_cmos:
+            horizontal:
+                elements: [0, 415, 1245, 1660, 2240, 2820, 3235, 4065]
+                extention: [85,85,85,85,85,85,85,85]
+                extention0: [170,170,170,170,170,170,170,170]
+                layer: 
+                - [met1, drawing]
+                - [met1, drawing]
+                - [met1, drawing]
+                - [met1, drawing]
+                - [met1, drawing]
+                - [met1, drawing]
+                - [met1, drawing]
+                - [met1, drawing]
+                pin_layer:
+                - [met1, pin]
+                - [met1, pin]
+                - [met1, pin]
+                - [met1, pin]
+                - [met1, pin]
+                - [met1, pin]
+                - [met1, pin]
+                - [met1, pin]
+                scope: [0, 4480]
+                width: [260,170,170,170,170,170,170,170]
+                ycolor: [not MPT,not MPT,not MPT,not MPT,not MPT,not MPT,not MPT,not MPT]
+            primary_grid: horizontal
+            type: routing
+            vertial:
+                elements: [0]
+                extention: [85]
+                extension0: [170]
+                layer: [li1, drawing]
+                pin_layer: [li1, pin]
+                scope: [0, 460]
+                width: [170]
+                xcolor: [not MPT]
+            via:
+                map: [via_M0_M1_1,via_M0_M1_0,via_M0_M1_0,via_M0_M1_0,via_M0_M1_0,
+                        via_M0_M1_0,via_M0_M1_0,via_M0_M1_0]
+                
         routing_12_basic:
             horizontal:
-                elements: [0]
-                extension: [25]
-                extension0: [100]
+                elements: [0, 415, 830, 1245, 1660, 2240, 2820, 3235, 3650, 4065]
+                extension: [85,85,85,85,85,85,85,85,85,85]
+                extension0: [170,170,170,170,170,170,170,170,170,170]
                 layer:
-                - [M2, drawing]
+                - [met1, drawing]
+                - [met1, drawing]
+                - [met1, drawing]
+                - [met1, drawing]
+                - [met1, drawing]
+                - [met1, drawing]
+                - [met1, drawing]
+                - [met1, drawing]
+                - [met1, drawing]
+                - [met1, drawing]
                 pin_layer:
-                - [M2, pin]
-                scope: [0, 100]
-                width: [50]
-                ycolor: [not MPT]
+                - [met1, pin]
+                - [met1, pin]
+                - [met1, pin]
+                - [met1, pin]
+                - [met1, pin]
+                - [met1, pin]
+                - [met1, pin]
+                - [met1, pin]
+                - [met1, pin]
+                - [met1, pin]
+                scope: [0, 4480]
+                width: [260,260,260,260,260,260,260,260,260,260]
+                ycolor: [not MPT,not MPT,not MPT,not MPT,not MPT,not MPT,
+                            not MPT,not MPT,not MPT,not MPT,]
             primary_grid: horizontal
             type: routing
             vertical:
                 elements: [0]
-                extension: [25]
-                extension0: [100]
+                extension: [85]
+                extension0: [170]
                 layer:
-                - [M1, drawing]
+                - [li1, drawing]
                 pin_layer:
-                - [M1, pin]
-                scope: [0, 130]
-                width: [50]
+                - [li1, pin]
+                scope: [0, 460]
+                width: [170]
                 xcolor: [not MPT]
             via:
                 map:
+                - [via_M1_M2_1]
+                - [via_M1_M2_0]
+                - [via_M1_M2_0]
+                - [via_M1_M2_0]
+                - [via_M1_M2_0]
+                - [via_M1_M2_0]
+                - [via_M1_M2_0]
+                - [via_M1_M2_0]
+                - [via_M1_M2_0]
                 - [via_M1_M2_0]
         routing_12_cmos:
             horizontal:
-                elements: [0, 200, 300, 485, 600, 715, 900, 1000]
-                extension: [75, 25, 25, 25, 25, 25, 25, 25]
-                extension0: [300, 140, 140, 140, 140, 140, 140, 140]
+                elements: [0, 415, 1245, 1660, 2240, 2820, 3235, 4065]
+                extension: [85, 85, 85, 85, 85, 85, 85, 85]
+                extension0: [170, 170, 170, 170, 170, 170, 170, 170]
                 layer:
-                - [M2, drawing]
-                - [M2, drawing]
-                - [M2, drawing]
-                - [M2, drawing]
-                - [M2, drawing]
-                - [M2, drawing]
-                - [M2, drawing]
-                - [M2, drawing]
+                - [met1, drawing]
+                - [met1, drawing]
+                - [met1, drawing]
+                - [met1, drawing]
+                - [met1, drawing]
+                - [met1, drawing]
+                - [met1, drawing]
+                - [met1, drawing]
                 pin_layer:
-                - [M2, pin]
-                - [M2, pin]
-                - [M2, pin]
-                - [M2, pin]
-                - [M2, pin]
-                - [M2, pin]
-                - [M2, pin]
-                - [M2, pin]
-                scope: [0, 1200]
-                width: [150, 50, 50, 50, 50, 50, 50, 50]
+                - [met1, pin]
+                - [met1, pin]
+                - [met1, pin]
+                - [met1, pin]
+                - [met1, pin]
+                - [met1, pin]
+                - [met1, pin]
+                - [met1, pin]
+                scope: [0, 4480]
+                width: [260, 230, 230, 230, 230, 230, 230, 230]
                 ycolor: [not MPT, not MPT, not MPT, not MPT, not MPT, not MPT, not
                         MPT, not MPT]
             primary_grid: horizontal
             type: routing
             vertical:
                 elements: [0]
-                extension: [25]
-                extension0: [100]
+                extension: [85]
+                extension0: [170]
                 layer:
-                - [M1, drawing]
+                - [li1, drawing]
                 pin_layer:
-                - [M1, pin]
-                scope: [0, 130]
-                width: [50]
+                - [li1, pin]
+                scope: [0, 460]
+                width: [170]
                 xcolor: [not MPT]
             via:
                 map:
-                - [via_M1_M2_2, via_M1_M2_0, via_M1_M2_0, via_M1_M2_0, via_M1_M2_0,
-                    via_M1_M2_0, via_M1_M2_0, via_M1_M2_0]
-        routing_12_cmos_flipped:
-            horizontal:
-                elements: [0, 115, 300, 400, 600, 800, 900, 1085]
-                extension: [25, 25, 25, 25, 75, 25, 25, 25]
-                extension0: [140, 140, 140, 140, 300, 140, 140, 140]
-                layer:
-                - [M2, drawing]
-                - [M2, drawing]
-                - [M2, drawing]
-                - [M2, drawing]
-                - [M2, drawing]
-                - [M2, drawing]
-                - [M2, drawing]
-                - [M2, drawing]
-                pin_layer:
-                - [M2, pin]
-                - [M2, pin]
-                - [M2, pin]
-                - [M2, pin]
-                - [M2, pin]
-                - [M2, pin]
-                - [M2, pin]
-                - [M2, pin]
-                scope: [0, 1200]
-                width: [50, 50, 50, 50, 150, 50, 50, 50]
-                ycolor: [not MPT, not MPT, not MPT, not MPT, not MPT, not MPT, not
-                        MPT, not MPT]
-            primary_grid: horizontal
-            type: routing
-            vertical:
-                elements: [0]
-                extension: [25]
-                extension0: [100]
-                layer:
-                - [M1, drawing]
-                pin_layer:
-                - [M1, pin]
-                scope: [0, 130]
-                width: [50]
-                xcolor: [not MPT]
-            via:
-                map:
-                - [via_M1_M2_0, via_M1_M2_0, via_M1_M2_0, via_M1_M2_0, via_M1_M2_2,
+                - [via_M1_M2_1, via_M1_M2_0, via_M1_M2_0, via_M1_M2_0, via_M1_M2_0,
                     via_M1_M2_0, via_M1_M2_0, via_M1_M2_0]
         routing_12_mos:
             horizontal:
@@ -262,224 +287,98 @@ grids:
             via:
                 map:
                 - [via_M1_M2_2, via_M1_M2_0, via_M1_M2_0, via_M1_M2_0]
-        routing_12_thick:
-            horizontal:
-                elements: [150, 450]
-                extension: [130, 130]
-                extension0: [260, 260]
-                layer:
-                - [M2, drawing]
-                - [M2, drawing]
-                pin_layer:
-                - [M2, pin]
-                - [M2, pin]
-                scope: [0, 600]
-                width: [150, 150]
-                ycolor: [not MPT, not MPT]
-            primary_grid: horizontal
-            type: routing
-            vertical:
-                elements: [0]
-                extension: [25]
-                extension0: [100]
-                layer:
-                - [M1, drawing]
-                pin_layer:
-                - [M1, pin]
-                scope: [0, 130]
-                width: [50]
-                xcolor: [not MPT]
-            via:
-                map:
-                - [via_M1_M2_2, via_M1_M2_2]
         routing_23_basic:
             horizontal:
-                elements: [0]
-                extension: [25]
-                extension0: [140]
+                elements: [0, 415, 830, 1245, 1660, 2240, 2820, 3235, 3650, 4065]
+                extension: [85,85,85,85,85,85,85,85,85,85]
+                extension0: [170,170,170,170,170,170,170,170,170,170]
                 layer:
-                - [M2, drawing]
+                - [met1, drawing]
+                - [met1, drawing]
+                - [met1, drawing]
+                - [met1, drawing]
+                - [met1, drawing]
+                - [met1, drawing]
+                - [met1, drawing]
+                - [met1, drawing]
+                - [met1, drawing]
+                - [met1, drawing]
                 pin_layer:
-                - [M2, pin]
-                scope: [0, 100]
-                width: [50]
-                ycolor: [not MPT]
+                - [met1, pin]
+                - [met1, pin]
+                - [met1, pin]
+                - [met1, pin]
+                - [met1, pin]
+                - [met1, pin]
+                - [met1, pin]
+                - [met1, pin]
+                - [met1, pin]
+                - [met1, pin]
+                scope: [0, 4480]
+                width: [260,260,260,260,260,260,260,260,260,260]
+                ycolor: [not MPT,not MPT,not MPT,not MPT,not MPT,not MPT,
+                            not MPT,not MPT,not MPT,not MPT,]
             primary_grid: horizontal
             type: routing
             vertical:
                 elements: [0]
-                extension: [30]
-                extension0: [120]
+                extension: [130]
+                extension0: [390]
                 layer:
-                - [M3, drawing]
+                - [met2, drawing]
                 pin_layer:
-                - [M3, pin]
-                scope: [0, 130]
-                width: [60]
+                - [met2, pin]
+                scope: [0, 460]
+                width: [320]
                 xcolor: [not MPT]
             via:
                 map:
-                - [via_M2_M3_0]
-        routing_23_basic_thick:
-            horizontal:
-                elements: [0]
-                extension: [25]
-                extension0: [140]
-                layer:
-                - [M2, drawing]
-                pin_layer:
-                - [M2, pin]
-                scope: [0, 100]
-                width: [50]
-                ycolor: [not MPT]
-            primary_grid: horizontal
-            type: routing
-            vertical:
-                elements: [0]
-                extension: [75]
-                extension0: [300]
-                layer:
-                - [M3, drawing]
-                pin_layer:
-                - [M3, pin]
-                scope: [0, 260]
-                width: [150]
-                xcolor: [not MPT]
-            via:
-                map:
-                - [via_M2_M3_3]
+                - [via_M2_M3_0,via_M2_M3_0,via_M2_M3_0,via_M2_M3_0,via_M2_M3_0,via_M2_M3_0,
+                        via_M2_M3_0,via_M2_M3_0,via_M2_M3_0,via_M2_M3_0]
         routing_23_cmos:
             horizontal:
-                elements: [0, 200, 300, 485, 600, 715, 900, 1000]
-                extension: [75, 25, 25, 25, 25, 25, 25, 25]
-                extension0: [300, 140, 140, 140, 140, 140, 140, 140]
+                elements: [0, 415, 1245, 1660, 2240, 2820, 3235, 4065]
+                extension: [85, 85, 85, 85, 85, 85, 85, 85]
+                extension0: [170, 170, 170, 170, 170, 170, 170, 170]
                 layer:
-                - [M2, drawing]
-                - [M2, drawing]
-                - [M2, drawing]
-                - [M2, drawing]
-                - [M2, drawing]
-                - [M2, drawing]
-                - [M2, drawing]
-                - [M2, drawing]
+                - [met1, drawing]
+                - [met1, drawing]
+                - [met1, drawing]
+                - [met1, drawing]
+                - [met1, drawing]
+                - [met1, drawing]
+                - [met1, drawing]
+                - [met1, drawing]
                 pin_layer:
-                - [M2, pin]
-                - [M2, pin]
-                - [M2, pin]
-                - [M2, pin]
-                - [M2, pin]
-                - [M2, pin]
-                - [M2, pin]
-                - [M2, pin]
-                scope: [0, 1200]
-                width: [150, 50, 50, 50, 50, 50, 50, 50]
+                - [met1, pin]
+                - [met1, pin]
+                - [met1, pin]
+                - [met1, pin]
+                - [met1, pin]
+                - [met1, pin]
+                - [met1, pin]
+                - [met1, pin]
+                scope: [0, 4480]
+                width: [260, 230, 230, 230, 230, 230, 230, 230]
                 ycolor: [not MPT, not MPT, not MPT, not MPT, not MPT, not MPT, not
                         MPT, not MPT]
             primary_grid: horizontal
             type: routing
             vertical:
                 elements: [0]
-                extension: [30]
-                extension0: [120]
+                extension: [130]
+                extension0: [390]
                 layer:
-                - [M3, drawing]
+                - [met2, drawing]
                 pin_layer:
-                - [M3, pin]
-                scope: [0, 130]
-                width: [60]
+                - [met2, pin]
+                scope: [0, 460]
+                width: [320]
                 xcolor: [not MPT]
             via:
                 map:
-                - [via_M2_M3_2, via_M2_M3_0, via_M2_M3_0, via_M2_M3_0, via_M2_M3_0,
+                - [via_M2_M3_1, via_M2_M3_0, via_M2_M3_0, via_M2_M3_0, via_M2_M3_0,
                     via_M2_M3_0, via_M2_M3_0, via_M2_M3_0]
-        routing_23_cmos_flipped:
-            horizontal:
-                elements: [0, 115, 300, 400, 600, 800, 900, 1085]
-                extension: [25, 25, 25, 25, 75, 25, 25, 25]
-                extension0: [140, 140, 140, 140, 300, 140, 140, 140]
-                layer:
-                - [M2, drawing]
-                - [M2, drawing]
-                - [M2, drawing]
-                - [M2, drawing]
-                - [M2, drawing]
-                - [M2, drawing]
-                - [M2, drawing]
-                - [M2, drawing]
-                pin_layer:
-                - [M2, pin]
-                - [M2, pin]
-                - [M2, pin]
-                - [M2, pin]
-                - [M2, pin]
-                - [M2, pin]
-                - [M2, pin]
-                - [M2, pin]
-                scope: [0, 1200]
-                width: [50, 50, 50, 50, 150, 50, 50, 50]
-                ycolor: [not MPT, not MPT, not MPT, not MPT, not MPT, not MPT, not
-                        MPT, not MPT]
-            primary_grid: horizontal
-            type: routing
-            vertical:
-                elements: [0]
-                extension: [30]
-                extension0: [120]
-                layer:
-                - [M3, drawing]
-                pin_layer:
-                - [M3, pin]
-                scope: [0, 130]
-                width: [60]
-                xcolor: [not MPT]
-            via:
-                map:
-                - [via_M2_M3_0, via_M2_M3_0, via_M2_M3_0, via_M2_M3_0, via_M2_M3_2,
-                    via_M2_M3_0, via_M2_M3_0, via_M2_M3_0]
-        routing_23_cmos_thick:
-            horizontal:
-                elements: [0, 200, 300, 485, 600, 715, 900, 1000]
-                extension: [205, 155, 155, 155, 155, 155, 155, 155]
-                extension0: [300, 140, 140, 140, 140, 140, 140, 140]
-                layer:
-                - [M2, drawing]
-                - [M2, drawing]
-                - [M2, drawing]
-                - [M2, drawing]
-                - [M2, drawing]
-                - [M2, drawing]
-                - [M2, drawing]
-                - [M2, drawing]
-                pin_layer:
-                - [M2, pin]
-                - [M2, pin]
-                - [M2, pin]
-                - [M2, pin]
-                - [M2, pin]
-                - [M2, pin]
-                - [M2, pin]
-                - [M2, pin]
-                scope: [0, 1200]
-                width: [150, 50, 50, 50, 50, 50, 50, 50]
-                ycolor: [not MPT, not MPT, not MPT, not MPT, not MPT, not MPT, not
-                        MPT, not MPT]
-            primary_grid: horizontal
-            type: routing
-            vertical:
-                elements: [0]
-                extension: [75]
-                extension0: [300]
-                layer:
-                - [M3, drawing]
-                pin_layer:
-                - [M3, pin]
-                scope: [0, 130]
-                width: [150]
-                xcolor: [not MPT]
-            via:
-                map:
-                - [via_M2_M3_3, via_M2_M3_3, via_M2_M3_3, via_M2_M3_3, via_M2_M3_3,
-                    via_M2_M3_3, via_M2_M3_3, via_M2_M3_3]
         routing_23_mos:
             horizontal:
                 elements: [0, 200, 300, 485]
@@ -514,64 +413,7 @@ grids:
             via:
                 map:
                 - [via_M2_M3_2, via_M2_M3_0, via_M2_M3_0, via_M2_M3_0]
-        routing_23_thick:
-            horizontal:
-                elements: [0]
-                extension: [75]
-                extension0: [300]
-                layer:
-                - [M2, drawing]
-                pin_layer:
-                - [M2, pin]
-                scope: [0, 600]
-                width: [150]
-                ycolor: [not MPT]
-            primary_grid: horizontal
-            type: routing
-            vertical:
-                elements: [0]
-                extension: [75]
-                extension0: [300]
-                layer:
-                - [M3, drawing]
-                pin_layer:
-                - [M3, pin]
-                scope: [0, 260]
-                width: [150]
-                xcolor: [not MPT]
-            via:
-                map:
-                - [via_M2_M3_2]
-        routing_23_thick_basic:
-            horizontal:
-                elements: [175, 425]
-                extension: [75, 75]
-                extension0: [300, 300]
-                layer:
-                - [M2, drawing]
-                - [M2, drawing]
-                pin_layer:
-                - [M2, pin]
-                - [M2, pin]
-                scope: [0, 600]
-                width: [150, 150]
-                ycolor: [not MPT, not MPT]
-            primary_grid: horizontal
-            type: routing
-            vertical:
-                elements: [0]
-                extension: [30]
-                extension0: [120]
-                layer:
-                - [M3, drawing]
-                pin_layer:
-                - [M3, pin]
-                scope: [0, 260]
-                width: [60]
-                xcolor: [not MPT]
-            via:
-                map:
-                - [via_M2_M3_2, via_M2_M3_2]
+        # TODO: met3(M4) grid elaboration        
         routing_34_basic:
             horizontal:
                 elements: [0]
@@ -600,170 +442,7 @@ grids:
             via:
                 map:
                 - [via_M3_M4_0]
-        routing_34_basic_thick:
-            horizontal:
-                elements: [0]
-                extension: [75]
-                extension0: [300]
-                layer:
-                - [M4, drawing]
-                pin_layer:
-                - [M4, pin]
-                scope: [0, 300]
-                width: [150]
-                ycolor: [not MPT]
-            primary_grid: horizontal
-            type: routing
-            vertical:
-                elements: [0]
-                extension: [30]
-                extension0: [120]
-                layer:
-                - [M3, drawing]
-                pin_layer:
-                - [M3, pin]
-                scope: [0, 130]
-                width: [60]
-                xcolor: [not MPT]
-            via:
-                map:
-                - [via_M3_M4_1]
-        routing_34_cmos_thick:
-            horizontal:
-                elements: [0]
-                extension: [75]
-                extension0: [1200]
-                layer:
-                - [M4, drawing]
-                pin_layer:
-                - [M4, pin]
-                scope: [0, 300, 600, 900]
-                width: [150]
-                ycolor: [not MPT]
-            primary_grid: horizontal
-            type: routing
-            vertical:
-                elements: [0]
-                extension: [30]
-                extension0: [120]
-                layer:
-                - [M3, drawing]
-                pin_layer:
-                - [M3, pin]
-                scope: [0, 130]
-                width: [60]
-                xcolor: [not MPT]
-            via:
-                map:
-                - [via_M3_M4_1]
-                - [via_M3_M4_1]
-                - [via_M3_M4_1]
-                - [via_M3_M4_1]
-        routing_34_thick:
-            horizontal:
-                elements: [0]
-                extension: [75]
-                extension0: [300]
-                layer:
-                - [M4, drawing]
-                pin_layer:
-                - [M4, pin]
-                scope: [0, 600]
-                width: [150]
-                ycolor: [not MPT]
-            primary_grid: horizontal
-            type: routing
-            vertical:
-                elements: [0]
-                extension: [75]
-                extension0: [300]
-                layer:
-                - [M3, drawing]
-                pin_layer:
-                - [M3, pin]
-                scope: [0, 130]
-                width: [150]
-                xcolor: [not MPT]
-            via:
-                map:
-                - [via_M3_M4_1]
-        routing_34_thick_basic:
-            horizontal:
-                elements: [0]
-                extension: [25]
-                extension0: [100]
-                layer:
-                - [M4, drawing]
-                pin_layer:
-                - [M4, pin]
-                scope: [0, 100]
-                width: [50]
-                ycolor: [not MPT]
-            primary_grid: horizontal
-            type: routing
-            vertical:
-                elements: [0]
-                extension: [75]
-                extension0: [300]
-                layer:
-                - [M3, drawing]
-                pin_layer:
-                - [M3, pin]
-                scope: [0, 260]
-                width: [150]
-                xcolor: [not MPT]
-            via:
-                map:
-                - [via_M3_M4_2]
         routing_34_cmos:
-            horizontal:
-                elements: [100, 200, 300, 400, 500, 700, 800, 900, 1000, 1100]
-                extension: [25, 25, 25, 25, 25, 25, 25, 25, 25, 25]
-                extension0: [100, 100, 100, 100, 100, 100, 100, 100, 100, 100]
-                layer:
-                - [M4, drawing]
-                - [M4, drawing]
-                - [M4, drawing]
-                - [M4, drawing]
-                - [M4, drawing]
-                - [M4, drawing]
-                - [M4, drawing]
-                - [M4, drawing]
-                - [M4, drawing]
-                - [M4, drawing]
-                pin_layer:
-                - [M4, pin]
-                - [M4, pin]
-                - [M4, pin]
-                - [M4, pin]
-                - [M4, pin]
-                - [M4, pin]
-                - [M4, pin]
-                - [M4, pin]
-                - [M4, pin]
-                - [M4, pin]
-                scope: [0, 1200]
-                width: [50, 50, 50, 50, 50, 50, 50, 50, 50, 50]
-                ycolor: [not MPT, not MPT, not MPT, not MPT, not MPT, 
-                         not MPT, not MPT, not MPT, not MPT, not MPT]
-            primary_grid: horizontal
-            type: routing
-            vertical:
-                elements: [0]
-                extension: [30]
-                extension0: [120]
-                layer:
-                - [M3, drawing]
-                pin_layer:
-                - [M3, pin]
-                scope: [0, 130]
-                width: [60]
-                xcolor: [not MPT]
-            via:
-                map:
-                - [via_M3_M4_0, via_M3_M4_0, via_M3_M4_0, via_M3_M4_0, via_M3_M4_0,
-                   via_M3_M4_0, via_M3_M4_0, via_M3_M4_0, via_M3_M4_0, via_M3_M4_0]
-        routing_34_cmos_flipped:
             horizontal:
                 elements: [100, 200, 300, 400, 500, 700, 800, 900, 1000, 1100]
                 extension: [25, 25, 25, 25, 25, 25, 25, 25, 25, 25]
@@ -839,90 +518,6 @@ grids:
             via:
                 map:
                 - [via_M4_M5_0]
-        routing_45_basic_thick:
-            horizontal:
-                elements: [0]
-                extension: [25]
-                extension0: [100]
-                layer:
-                - [M4, drawing]
-                pin_layer:
-                - [M4, pin]
-                scope: [0, 100]
-                width: [50]
-                ycolor: [not MPT]
-            primary_grid: horizontal
-            type: routing
-            vertical:
-                elements: [0]
-                extension: [75]
-                extension0: [300]
-                layer:
-                - [M5, drawing]
-                pin_layer:
-                - [M5, pin]
-                scope: [0, 260]
-                width: [150]
-                xcolor: [not MPT]
-            via:
-                map:
-                - [via_M4_M5_1]
-        routing_45_thick:
-            horizontal:
-                elements: [0]
-                extension: [75]
-                extension0: [300]
-                layer:
-                - [M4, drawing]
-                pin_layer:
-                - [M4, pin]
-                scope: [0, 600]
-                width: [150]
-                ycolor: [not MPT]
-            primary_grid: horizontal
-            type: routing
-            vertical:
-                elements: [0]
-                extension: [75]
-                extension0: [300]
-                layer:
-                - [M5, drawing]
-                pin_layer:
-                - [M5, pin]
-                scope: [0, 260]
-                width: [150]
-                xcolor: [not MPT]
-            via:
-                map:
-                - [via_M4_M5_2]
-        routing_45_thick_basic:
-            horizontal:
-                elements: [0]
-                extension: [75]
-                extension0: [300]
-                layer:
-                - [M4, drawing]
-                pin_layer:
-                - [M4, pin]
-                scope: [0, 600]
-                width: [150]
-                ycolor: [not MPT]
-            primary_grid: horizontal
-            type: routing
-            vertical:
-                elements: [0]
-                extension: [25]
-                extension0: [100]
-                layer:
-                - [M5, drawing]
-                pin_layer:
-                - [M5, pin]
-                scope: [0, 260]
-                width: [50]
-                xcolor: [not MPT]
-            via:
-                map:
-                - [via_M4_M5_2]
         routing_45_cmos:
             horizontal:
                 elements: [100, 200, 300, 400, 500, 700, 800, 900, 1000, 1100]
@@ -1019,54 +614,6 @@ grids:
                 map:
                 - [via_M4_M5_0, via_M4_M5_0, via_M4_M5_0, via_M4_M5_0, via_M4_M5_0,
                    via_M4_M5_0, via_M4_M5_0, via_M4_M5_0, via_M4_M5_0, via_M4_M5_0]
-        routing_45_cmos_thick:
-            horizontal:
-                elements: [100, 200, 300, 400, 500, 700, 800, 900, 1000, 1100]
-                extension: [25, 25, 25, 25, 25, 25, 25, 25, 25, 25]
-                extension0: [100, 100, 100, 100, 100, 100, 100, 100, 100, 100]
-                layer:
-                - [M4, drawing]
-                - [M4, drawing]
-                - [M4, drawing]
-                - [M4, drawing]
-                - [M4, drawing]
-                - [M4, drawing]
-                - [M4, drawing]
-                - [M4, drawing]
-                - [M4, drawing]
-                - [M4, drawing]
-                pin_layer:
-                - [M4, pin]
-                - [M4, pin]
-                - [M4, pin]
-                - [M4, pin]
-                - [M4, pin]
-                - [M4, pin]
-                - [M4, pin]
-                - [M4, pin]
-                - [M4, pin]
-                - [M4, pin]
-                scope: [0, 1200]
-                width: [50, 50, 50, 50, 50, 50, 50, 50, 50, 50]
-                ycolor: [not MPT, not MPT, not MPT, not MPT, not MPT, 
-                         not MPT, not MPT, not MPT, not MPT, not MPT]
-            primary_grid: horizontal
-            type: routing
-            vertical:
-                elements: [0]
-                extension: [25]
-                extension0: [100]
-                layer:
-                - [M5, drawing]
-                pin_layer:
-                - [M5, pin]
-                scope: [0, 260]
-                width: [150]
-                xcolor: [not MPT]
-            via:
-                map:
-                - [via_M4_M5_1, via_M4_M5_1, via_M4_M5_1, via_M4_M5_1, via_M4_M5_1,
-                   via_M4_M5_1, via_M4_M5_1, via_M4_M5_1, via_M4_M5_1, via_M4_M5_1]
         routing_56_basic:
             horizontal:
                 elements: [0]
@@ -1125,7 +672,7 @@ grids:
                 - [via_M6_M7_0]
 mpl: *laygo2_tech_mpl
 templates:
-    tsmcN28_microtemplates_dense:
+    sky130_microtemplates_dense:
         boundary_bottom:
             pins: {}
             unit_size: [130, 600]
