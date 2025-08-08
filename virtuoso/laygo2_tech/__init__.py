@@ -19,5 +19,5 @@
 
 """Laygo2 technology setup in Niftylab's style"""
 from .core import *
-name = 'tsmcN28'  # technology name
+name = 'skywater130'  # technology name
 

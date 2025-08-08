@@ -32,11 +32,11 @@ import yaml,pprint
 # Script to convert laygo1 template/grid files to laygo2 tech file
 # Input parameters
 #   laygo1 template filename
-laygo1_template_fname = 'tsmcN28_microtemplates_dense_templates.yaml'
+laygo1_template_fname = 'tsmcN45_microtemplates_dense_templates.yaml'
 #   laygo1 grid filename
-laygo1_grid_fname = 'tsmcN28_microtemplates_dense_grids.yaml'
+laygo1_grid_fname = 'tsmcN45_microtemplates_dense_grids.yaml'
 #   laygo2 tech filename
-tech_fname = './laygo2_tech/laygo2_tech111.yaml'
+tech_fname = './laygo2_tech/laygo2_tech_test.yaml'
 # Scaling factor
 scale = 1000
 
@@ -134,7 +134,6 @@ if laygo1_grid_fname is not None:
                 gdict_new['via'] = dict()
                 gdict_new['via']['map'] = \
                     np.zeros((len(vdict['elements']), len(hdict['elements'])), dtype=np.object)
-                print(gdict['viamap'])
                 for vn, lvcoord in gdict['viamap'].items():
                     if isinstance(lvcoord[0], int):
                         _lvcoord = [lvcoord]  # convert to list

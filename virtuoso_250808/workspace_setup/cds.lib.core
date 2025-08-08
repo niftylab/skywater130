@@ -1,0 +1,12 @@
+#cadence base libraries
+DEFINE     analogLib $CDSHOME/tools/dfII/etc/cdslib/artist/analogLib
+DEFINE     basic     $CDSHOME/tools/dfII/etc/cdslib/basic
+
+#technology base libraries
+DEFINE sky130_fd_pr_main $BAG_TECH_CONFIG_DIR/workspace_setup/PDK/libs/sky130_fd_pr_main
+DEFINE avTech /TOOL/CADENCE/ASSURA41_IC618/tools.lnx86/assura/etc/avtech/avTech
+
+# BAG Libraries
+INCLUDE cds.lib.bag
+
+# Design libraries

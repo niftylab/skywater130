@@ -15,7 +15,7 @@ instances:
     cell_name: iopin
     instpins: {}
   R0:
-    lib_name: tsmcN28
+    lib_name: sky130_fd_pr_main
     cell_name: rupolym_m
     instpins:
       MINUS:

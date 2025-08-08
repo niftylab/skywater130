@@ -1,0 +1,16 @@
+*drcRulesFile: /WORK_jupiter/hjpark/bag_workspace_tsmcN28/Calibre/drc/calibre.drc
+*drcRulesFileLastLoad: 1594644831
+*drcRunDir: ./rundir_drc
+*drcLayoutPaths: GDSFILENAME
+*drcLayoutPrimary: TOPCELLNAME
+*drcLayoutLibrary: SPUTNIK_B0_00JD
+*drcLayoutView: layout
+*drcLayoutGetFromViewer: 1
+*drcResultsFile: DRC_RES.db
+*drcCellName: 0
+*drcDRCMaxResultsAll: 1
+*drcSummaryFile: DRC.rep
+*cmnResolution: 5
+*cmnFDILayoutLibrary: SPUTNIK_B0_00JD
+*cmnFDILayoutView: layout
+*cmnFDIDEFLayoutPath: PADFRAME0_working.def

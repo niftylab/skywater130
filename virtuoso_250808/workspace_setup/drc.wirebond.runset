@@ -1,0 +1,13 @@
+*drcRulesFile: /TECH/tsmc/CLN45GS/TECH_LIB/VERIFY_RULE_FILE/BOND/CN45_WIRE_BOND_10M_7X2Z.15a
+*drcRunDir: ./rundir_drc
+*drcLayoutPaths: SPUTNIK_B0_WSR_WDMY.calibre.db
+*drcLayoutPrimary: SPUTNIK_B0_WSR_WDMY
+*drcLayoutLibrary: SPUTNIK_B0_00JD
+*drcLayoutView: layout
+*drcLayoutGetFromViewer: 1
+*drcResultsFile: SPUTNIK_B0_WSR_WDMY.drc.results
+*drcSummaryFile: SPUTNIK_B0_WSR_WDMY.drc.summary
+*cmnRunHier: 0
+*cmnFDILayoutLibrary: SPUTNIK_B0_00JD
+*cmnFDILayoutView: layout
+*cmnFDIDEFLayoutPath: SPUTNIK_B0_WSR_WDMY.def

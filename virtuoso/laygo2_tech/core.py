@@ -30,6 +30,11 @@ with open(tech_fname, 'r') as stream:
         print(exc)
 techobj = NiftyTechnology(tech_params = tech_params)
 
+def load_templates_and_grids():
+    tlib = techobj.load_tech_templates()
+    glib = techobj.load_tech_grids(templates=tlib)
+    return tlib, glib 
+
 def load_templates():
     return techobj.load_tech_templates() 
 

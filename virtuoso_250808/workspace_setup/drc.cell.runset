@@ -1,0 +1,24 @@
+*drcRulesFile: /WORK_jupiter/hjpark/bag_workspace_tsmcN28/Calibre/drc/calibre.drc.cell
+*drcRulesFileLastLoad: 1594644831
+*drcRunDir: ./rundir_drc
+*drcLayoutPaths: buf_test.calibre.db
+*drcLayoutPrimary: buf_test
+*drcLayoutLibrary: thshin_65_to_40
+*drcLayoutView: layout
+*drcLayoutGetFromViewer: 1
+*drcResultsFile: buf_test.drc.results
+*drcCellName: 0
+*drcDRCMaxResultsAll: 1
+*drcSummaryFile: buf_test.drc.summary
+*drcIncrDRCSlaveHosts: {use {}} {hostName {}} {cpuCount {}} {a32a64 {}} {rsh {}} {maxMem {}} {workingDir {}} {layerDir {}} {mgcLibPath {}} {launchName {}}
+*drcIncrDRCLSFSlaveTbl: {use 1} {totalCpus 1} {minCpus 1} {architecture {{}}} {minMemory {{}}} {resourceOptions {{}}} {submitOptions {{}}}
+*drcIncrDRCGridSlaveTbl: {use 1} {totalCpus 1} {minCpus 1} {architecture {{}}} {minMemory {{}}} {resourceOptions {{}}} {submitOptions {{}}}
+*cmnWarnLayoutOverwrite: 0
+*cmnShowOptions: 1
+*cmnResolution: 5
+*cmnSlaveHosts: {use {}} {hostName {}} {cpuCount {}} {a32a64 {}} {rsh {}} {maxMem {}} {workingDir {}} {layerDir {}} {mgcLibPath {}} {launchName {}}
+*cmnLSFSlaveTbl: {use 1} {totalCpus 1} {minCpus 1} {architecture {{}}} {minMemory {{}}} {resourceOptions {{}}} {submitOptions {{}}}
+*cmnGridSlaveTbl: {use 1} {totalCpus 1} {minCpus 1} {architecture {{}}} {minMemory {{}}} {resourceOptions {{}}} {submitOptions {{}}}
+*cmnFDILayoutLibrary: thshin_65_to_40
+*cmnFDILayoutView: layout
+*cmnFDIDEFLayoutPath: buf_test.def

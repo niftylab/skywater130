@@ -21,8 +21,8 @@ mos:
 laygo2_generators_private:
   default_parameters:
     lch: 150e-9
-    pw: 320e-9
-    nw: 320e-9
+    pw: 550e-9
+    nw: 420e-9
     device_intent: 'fast'
     rl : 620e-9
     rw : 400e-9

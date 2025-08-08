@@ -19,8 +19,8 @@ instances:
     cell_name: iopin
     instpins: {}
   M0:
-    lib_name: tsmcN28
-    cell_name: pch_lvt_mac
+    lib_name: sky130_fd_pr_main
+    cell_name: pfet_01v8
     instpins:
       D:
         direction: inputOutput
