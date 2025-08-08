@@ -19,7 +19,7 @@ database:
   # configurations for schematic import and generation
   schematic:
     # technology library to configure new libraries with
-    tech_lib: "tsmcN28"
+    tech_lib: "sky130_fd_pr_main"
     # symbol pin master
     sympin: ["basic", "sympin", "symbolNN"]
     # input pin master
@@ -31,11 +31,11 @@ database:
     # simulators where termOrder CDF field should be filled
     simulators: ["auLvs", "auCdl", "spectre", "hspiceD"]
     # libraries to exclude for schematic import
-    exclude_libraries: ["analogLib", "basic", "sky130_fd_pr"]
+    exclude_libraries: ["analogLib", "basic", "sky130_fd_pr_main"]
   # configurations for testbench creation
   testbench:
     # config view global libraries
-    config_libs: "tsmcN28 analogLib basic"
+    config_libs: "sky130_fd_pr_main analogLib basic"
     # config view cellviews
     config_views: "spectre schematic av_extracted veriloga"
     # config view stop cellviews
@@ -67,8 +67,7 @@ database:
     # RCX run directory
     rcx_run_dir: "${BAG_WORK_DIR}/rundir_pex"
     # source.added location
-    source_added_file: "/TECH_jupiter/tsmc/28HPCPLUS/TECH_LIB/PDK/iPDK/PDK_skill_RF_1P9M_6X1Z1U/Calibre/lvs/source.added" 
-    #"/autofs/TECH/tsmc/CLN45GS/TECH_LIB/PDK/PDK_RF_1P10M_1P10M_7X0Y1Z0R1U/Calibre/lvs/source.added"
+    source_added_file: ""
     # maximum number of LVS/RCX processes BAG can launch.
     max_workers: 2
     # default RC extraction parameters

@@ -1,0 +1,28 @@
+# the Technology class.
+# class: "templates_gpdk045.tech.TechInfoGPDK045"
+
+# layout related parameters
+layout:
+  # default EM spec calculation settings
+  em:
+    # DC current temperature
+    dc_temp: !!int 70
+    # RMS current allowable temperature increase
+    rms_dt: !!int 10
+
+# transistor technology parameters
+mos:
+  # the transistor width minimum resolution.
+  width_resolution: !!float 5.0e-9
+  # the transistor length minimum resolution.
+  length_resolution: !!float 5.0e-9
+
+# default parameters of laygo2 generators
+laygo2_generators_private:
+  default_parameters:
+    lch: 150e-9
+    pw: 320e-9
+    nw: 320e-9
+    device_intent: 'fast'
+    rl : 620e-9
+    rw : 400e-9

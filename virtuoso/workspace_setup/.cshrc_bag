@@ -9,7 +9,7 @@ setenv BAG_PYTHON "/home/TOOL/Anaconda/current/bin/python3.7"
 # set jupyter notebook path
 setenv BAG_JUPYTER "/usr/local/Anaconda/bin/jupyter-notebook"
 # set technology/project configuration directory
-setenv BAG_TECH_CONFIG_DIR "$BAG_WORK_DIR/skywater130/virtuoso"
+setenv BAG_TECH_CONFIG_DIR "$BAG_WORK_DIR/skywater130"
 # set where BAG saves temporary files
 setenv BAG_TEMP_DIR "${BAG_WORK_DIR}/BAGTMP"
 # set location of BAG configuration file
