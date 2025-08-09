@@ -679,6 +679,46 @@ templates:
             - 410
           - - 1160
             - 410
+        diffusion:
+          layer:
+          - diff
+          - drawing
+          netname: diffusion
+          xy:
+          - - 580
+            - 900
+          - - 580
+            - 900
+        gatepoly0:
+          layer:
+          - poly
+          - drawing
+          netname: gatepoly0
+          xy:
+          - - 290
+            - 1500
+          - - 290
+            - 1500
+        gatepoly1:
+          layer:
+          - poly
+          - drawing
+          netname: gatepoly1
+          xy:
+          - - 870
+            - 1500
+          - - 870
+            - 1500
+        gatepoly2:
+          layer:
+          - poly
+          - drawing
+          netname: gatepoly2
+          xy:
+          - - 580
+            - 1700
+          - - 580
+            - 1700
       rects: {}
       unit_size:
       - 1160
@@ -894,6 +934,56 @@ templates:
             - 410
           - - 1160
             - 410
+        diffusion:
+          layer:
+          - diff
+          - drawing
+          netname: diffusion
+          xy:
+          - - 580
+            - 900
+          - - 580
+            - 900
+        gatepoly0:
+          layer:
+          - poly
+          - drawing
+          netname: gatepoly0
+          xy:
+          - - 290
+            - 1500
+          - - 290
+            - 1500
+        gatepoly1:
+          layer:
+          - poly
+          - drawing
+          netname: gatepoly1
+          xy:
+          - - 870
+            - 1500
+          - - 870
+            - 1500
+        gatepoly2:
+          layer:
+          - poly
+          - drawing
+          netname: gatepoly2
+          xy:
+          - - 580
+            - 1700
+          - - 580
+            - 1700
+        nwell:
+          layer:
+          - diff
+          - drawing
+          netname: nwell
+          xy:
+          - - 580
+            - 150
+          - - 580
+            - 150
       rects: {}
       unit_size:
       - 1160
